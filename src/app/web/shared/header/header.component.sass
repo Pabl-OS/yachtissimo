@@ -1,0 +1,37 @@
+@import './../../../../styles.sass'
+
+
+.icon
+    max-width: 20px
+    color: $secondary-text-color
+
+.menu
+   border-bottom: 4px solid $secondary-color
+   width: 90%
+.menu li
+   cursor: pointer
+   font-family: 'gothamrounded-medium', sans-serif
+   margin-right:35px
+   margin-left:35px
+   a
+        color: $secondary-text-color
+        font-size: 10pt
+        &:hover
+            color: $primary-color
+
+.phone-number span
+    color: $secondary-text-color
+    font-family: 'gothamrounded-medium', sans-serif
+    font-size: 10pt
+    padding-right: 70px
+.title
+    border-bottom: 1px solid $secondary-color
+    font-family: 'gothamrounded-book', sans-serif
+
+.navbar-brand
+    margin-right: 0px
+
+@media (max-width: 750px)
+    .phone-number span
+        font-size: 6pt 
+    
