@@ -5,7 +5,6 @@ import { BareboatsRoutingModule } from './bareboats-routing.module';
 import { BareboatsComponent } from './bareboats.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { FilterAdvanceComponent } from './components/filter-advance/filter-advance.component';
-import { HeaderComponent } from '../shared/header/header.component';
 
 
 
@@ -14,7 +13,6 @@ import { HeaderComponent } from '../shared/header/header.component';
     BareboatsComponent,
     FilterComponent,
     FilterAdvanceComponent,
-    HeaderComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

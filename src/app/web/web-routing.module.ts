@@ -1,11 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WebComponent } from './web.component';
 
 
 const routes: Routes = [
   {
     path:'',
-    loadChildren:()=> import('./bareboats/bareboats.module').then(m => m.BareboatsModule)
+    component:WebComponent,
+    children:[
+      {
+        path:'bareboats',
+        loadChildren:()=> import('./bareboats/bareboats.module').then(m => m.BareboatsModule)
+  
+      },
+      {
+        path:'**',
+        redirectTo:'bareboats'
+
+      }
+    ]
   }
 ];
 
