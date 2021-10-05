@@ -6,6 +6,7 @@ import { BareboatsComponent } from './bareboats.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { FilterAdvanceComponent } from './components/filter-advance/filter-advance.component';
 import { BoatsComponent } from './components/boats/boats.component';
+import { BooksComponent } from './components/books/books.component';
 
 
 
@@ -14,7 +15,8 @@ import { BoatsComponent } from './components/boats/boats.component';
     BareboatsComponent,
     FilterComponent,
     FilterAdvanceComponent,
-    BoatsComponent
+    BoatsComponent,
+    BooksComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
