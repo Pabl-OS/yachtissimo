@@ -8,6 +8,7 @@ import { FilterAdvanceComponent } from './components/filter-advance/filter-advan
 import { BoatsComponent } from './components/boats/boats.component';
 import { BooksComponent } from './components/books/books.component';
 import { PlusComponent } from './components/plus/plus.component';
+import { SocialComponent } from './components/social/social.component';
 
 
 
@@ -18,7 +19,8 @@ import { PlusComponent } from './components/plus/plus.component';
     BooksComponent,
     FilterComponent,
     FilterAdvanceComponent,
-    PlusComponent
+    PlusComponent,
+    SocialComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
