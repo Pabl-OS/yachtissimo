@@ -14,6 +14,10 @@ const routes: Routes = [
   
       },
       {
+        path:'compare',
+        loadChildren:()=> import('./compare/compare.module').then(m => m.CompareModule)
+      },
+      {
         path:'**',
         redirectTo:'bareboats'
 
