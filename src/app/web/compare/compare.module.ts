@@ -4,12 +4,16 @@ import { CommonModule } from '@angular/common';
 import { CompareRoutingModule } from './compare-routing.module';
 import { CompareComponent } from './compare.component';
 import { CardCompareComponent } from './components/card-compare/card-compare.component';
+import { CplusComponent } from './components/cplus/cplus.component';
+
 
 
 @NgModule({
   declarations: [
     CompareComponent,
-    CardCompareComponent
+    CardCompareComponent,
+    CplusComponent,
+
   ],
   imports: [
     CommonModule,
