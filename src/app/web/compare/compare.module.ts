@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { CompareRoutingModule } from './compare-routing.module';
 import { CompareComponent } from './compare.component';
+import { CardCompareComponent } from './components/card-compare/card-compare.component';
 
 
 @NgModule({
   declarations: [
-    CompareComponent
+    CompareComponent,
+    CardCompareComponent
   ],
   imports: [
     CommonModule,
