@@ -7,38 +7,79 @@
 .container-top .other-options
     border-left: 1px solid $secondary-color
 
+.card
+    border-radius: 0px!important
+    &:hover
+        -webkit-transition: all 400ms ease-in
+        -webkit-transform: scale(1.03)
+        -ms-transition: all 400ms ease-in
+        -ms-transform: scale(1.03)
+        -moz-transition: all 400ms ease-in
+        -moz-transform: scale(1.03)
+        transition: all 400ms ease-in
+        transform: scale(1.03)
 
-.msg 
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+    background-color: $white-color
+    height: 40px
+    width: 40px
+    outline: black
+    background-size: 100%, 100%
+    border-radius: 50px 0px 0px 50px
+    background-image: none
+
+.carousel-control-next-icon
+    border-radius: 0px 50px 50px 0px
+
+.carousel-control-next-icon:after
+
+    content: '>'
+    font-size: 25px
+    color: $primary-color
+
+.carousel-control-prev-icon:after
+    content: '<'
+    font-size: 25px
+    color: $secondary-color
+
+.carousel-control-prev,
+.carousel-control-next
+    align-items: flex-end
+    bottom: 5px
+
+.msg
     margin-left: 10px
+.more-info
+    background-color: #000
+    border-radius: 50px
+    color: $white-color
+    font-size: 7pt
+    padding: 2px
+    height: 15px
+    width: 15px
 
 .scuba img ,.diamont img ,.video img
-    max-height: 20px
+    max-height: 18px
     margin-left: 10px
-
 
 .share img , .favorite img ,.compare img
-    max-height: 20px
+    max-height: 18px
     margin-left: 10px
-
-
-
 
 .price-boat
     font-family: 'gothamrounded-medium', sans-serif
     font-size: 9pt
 
-.plus-boat span,.description-boat 
-     font-family: 'gothamrounded-book', sans-serif
-     font-size: 9pt
+.plus-boat span,.description-boat
+    font-family: 'gothamrounded-book', sans-serif
+    font-size: 9pt
 
 .star img ,.msg img
-    width: 15px 
+    width: 15px
     height: 15px
-
 
 .title-boat
     font-family: 'gothamrounded-medium', sans-serif
     font-size: 19pt
     text-transform: uppercase
-
-  
