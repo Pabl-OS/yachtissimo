@@ -5,6 +5,7 @@ import { WebRoutingModule } from './web-routing.module';
 import { WebComponent } from './web.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 // import { HeaderComponent } from './shared/header/header.component';
 
 
@@ -14,12 +15,14 @@ import { FooterComponent } from './shared/footer/footer.component';
     HeaderComponent,
     FooterComponent,
 
+
   ],
 
 
   imports: [
     CommonModule,
-    WebRoutingModule
+    WebRoutingModule,
+    TranslateModule
   ]
 })
 export class WebModule { }
