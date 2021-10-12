@@ -4,5 +4,68 @@
     "header-item3": "DESTINOS",
     "header-item4": "BLOG",
     "header-item5": "COMPANIA",
-    "header-item6": "PREGUNTAR"
+    "header-item6": "PREGUNTAR",
+
+
+    "filter-reset": "RESTABLECER FILTROS",
+    "filter-order": "ORDENAR POR",
+
+
+    "go": "IR A RESERVAR",
+
+
+
+
+    "plus-title": "¿Por qué alquilar con nosotros?",
+    
+    "plus-cleft1": "Soluciones personalizadas",
+    "plus-cleft2": "10+ años de experiencia en alquiler de yates",
+    "plus-cleft3": "Cotizaciones rápidas y experiencia en contratos",
+    "plus-cleft4": "Agentes de alquiler de yates certificados por CYBA",
+    "plus-cleft5": "La mejor relación calidad-precio posible",
+
+    "plus-cright1": "Inspección de yates y entrevista a la tripulación.",
+    "plus-cright2": "Asistencia de reserva de ventanilla única",
+    "plus-cright3": "Empresa registrada sólida",
+    "plus-cright4": "Asesoramiento profesional e imparcial",
+    "plus-cright5": "Acceso a todos los yates tripulados.",
+
+    "plus-rmore": "LEER MÁS",
+
+
+
+    "footer-about": "YACHTISSIMO Charter Vacations es una agencia de corretaje de alquiler de yates independiente con acceso a más de 100 yates en todo el mundo. Contáctenos para experiencias de vacaciones extraordinarias a bordo de Veleros. Goletas, Catamaranes y Yates a motor en los destinos más espectaculares. Suscríbase al boletín de Yachtissimo para recibir actualizaciones por correo electrónico y ofertas exclusivas.",
+    "footer-abinput":"Tu correo",
+
+    "footer-ex-title": "EXPLORA DESTINOS",
+    
+    "footer-ex-item1": "USVI & BVI´S",
+    "footer-ex-item2": "Bahamas",
+    "footer-ex-item3": "Crotia",
+    "footer-ex-item4": "Grecia",
+    "footer-ex-item5": "Turquia",
+    "footer-ex-item6": "Sotavento del Caribe ",
+    "footer-ex-item7": "Caribe de Barlovento ",
+    "footer-ex-item8": "Todos los destinos",
+    "footer-ex-item9": "FAQ",
+
+
+
+    "footer-sea-title": "BUSCAR YATES",
+
+    "footer-sea-item1": "Catamaranes ",
+    "footer-sea-item2": "Catamaranes a motor",
+    "footer-sea-item3": "Veleros",
+    "footer-sea-item4": "Yates a motor",
+    "footer-sea-item5": "Goletas",
+    "footer-sea-item6": "Ofertas especiales  ",
+    "footer-sea-item7": "Buceo a bordo  ",
+    "footer-sea-item8": "Yoga y bienestar  ",
+    "footer-sea-item9": "Chartes todo incluido",
+
+
+    "footer-social-title": "¡ESTAMOS A UN CLIC DE DISTANCIA!",
+
+    "footer-cyba": "Martha es miembro y corredor certificado de la Asociación  de corredores de yates de alquiler"
+    
 }

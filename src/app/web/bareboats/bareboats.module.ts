@@ -9,6 +9,7 @@ import { BoatsComponent } from './components/boats/boats.component';
 import { BooksComponent } from './components/books/books.component';
 import { PlusComponent } from './components/plus/plus.component';
 import { SocialComponent } from './components/social/social.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 
@@ -27,7 +28,8 @@ import { SocialComponent } from './components/social/social.component';
   ],
   imports: [
     CommonModule,
-    BareboatsRoutingModule
+    BareboatsRoutingModule,
+    TranslateModule
   ]
 })
 export class BareboatsModule { }

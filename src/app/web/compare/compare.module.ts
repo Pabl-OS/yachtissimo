@@ -6,6 +6,7 @@ import { CompareComponent } from './compare.component';
 import { CardCompareComponent } from './components/card-compare/card-compare.component';
 import { CplusComponent } from './components/cplus/cplus.component';
 import { CsocialComponent } from './components/csocial/csocial.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -19,7 +20,8 @@ import { CsocialComponent } from './components/csocial/csocial.component';
   ],
   imports: [
     CommonModule,
-    CompareRoutingModule
+    CompareRoutingModule,
+    TranslateModule
   ]
 })
 export class CompareModule { }
