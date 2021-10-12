@@ -34,12 +34,12 @@
                               data-toggle="dropdown" 
                               aria-haspopup="true" 
                               aria-expanded="false" >
-                                US
+                                {{nameLang | uppercase}}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Spanish</a>
-                              <a class="dropdown-item" href="#">Other</a>
-                              <a class="dropdown-item" href="#">Other</a>
+                              <a class="dropdown-item" (click)="setLang('en')">English</a>
+                              <a class="dropdown-item" (click)="setLang('es')">Spanish</a>
+                              <a class="dropdown-item" >German</a>
                             </div>
                         </div>
                     </li>
