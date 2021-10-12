@@ -1,26 +1,44 @@
 @import './../../../../../styles'
 
 .btn-delete-filter
-    border:2px solid $secondary-color
+    border: 2px solid $secondary-color
     border-radius: 0px
     padding: 10px
 .btn-filter
     background: $secondary-color
-    border:2px solid $secondary-color
+    border: 2px solid $secondary-color
     border-radius: 0px
     color: $white-color
     padding: 10px
+.brand
+    border-bottom: 3px solid $secondary-text-color
 
+.icon
+    max-width: 12px
+    color: $secondary-text-color
 
+.input-icon
+    position: relative
+    border-bottom: 1px solid $secondary-text-color
+    margin-bottom: 20px
+    img
+        position: absolute
+        top: 12px
+        right: 20px
+        max-width: 20px
 .search
+    padding-left: 20px
     border: none
-    border-bottom: 1px solid $secondary-color
-    color: $secondary-color
     font-family: 'gothamrounded-book', sans-serif
-    font-size: 9pt
-    padding-bottom: 8px
-.date-picker input
     font-size: 10pt
+    padding-bottom: 8px
+    outline: none
+
+.date-picker input
+    border: none
+    border-radius: 0px!important
+    border-bottom: 1px solid $secondary-text-color!important
+    font-size: 9pt
     font-family: 'gothamrounded-book', sans-serif
 .section-content
     border-bottom: 1px solid $secondary-color
@@ -40,12 +58,24 @@ ul li
     list-style: none
     label img
         max-height: 18px
-        max-width:  18px
-        margin-right:10px
+        max-width: 18px
+        margin-right: 10px
 
 .gradiant
-    background:  linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
+    background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
 
 .form-check-input
     height: 10px
     margin-top: 10px
+
+.price-range::-webkit-slider-thumb
+    background: red!important
+
+.price-range::-moz-range-thumb
+    background: red!important
+
+.price-range::-ms-thumb
+    background: red!important
+
+.range::-moz-range-thumb
+    background: #AA0029!important
