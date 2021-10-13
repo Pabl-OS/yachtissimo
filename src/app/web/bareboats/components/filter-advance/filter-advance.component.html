@@ -1,7 +1,13 @@
 <div class="container-fluid pb-3">
     <div class="d-flex justify-content-between pt-3 ">
         <h6>FILTERS</h6>
-        <button class="btn" data-toggle="collapse"  data-target="#multiCollapseExample1"   aria-expanded="false" aria-controls="multiCollapseExample1">
+        <button class="btn" 
+                data-toggle="collapse"  
+                data-target="#multiCollapseExample1"   
+                aria-expanded="false" 
+                aria-controls="multiCollapseExample1"
+                (click)="closeFilter()"
+                >
           <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="delete">
         </button>
     </div>

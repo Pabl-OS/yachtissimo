@@ -6,9 +6,9 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-xl-2 col-md-4 col-sm-12 p-0" *ngIf="hideFilter">
+    <div class="col-xl-2 col-md-4 col-sm-12 p-0"    *ngIf="hideFilter">
       <div class="collapse filter-advance" id="multiCollapseExample1">
-      <app-filter-advance></app-filter-advance>
+      <app-filter-advance (close)="hideFilter = $event"></app-filter-advance>
       </div>
     </div>
     <div  class="col">
