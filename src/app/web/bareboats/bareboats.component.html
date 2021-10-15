@@ -1,21 +1,26 @@
-<app-filter></app-filter>
+<app-filter  [filterB] = "hideFilter" (closeFilter)="hideFilter = $event"  ></app-filter>
 
-<button class="btn btn-primary mt-3 mb-3" type="button" data-toggle="collapse"  data-target="#multiCollapseExample1" (click)="hideFilter = !hideFilter"  aria-expanded="false" aria-controls="multiCollapseExample1">Toggle both elements</button>
- 
+<!-- <button class="btn btn-primary mt-3 mb-3" 
+        type="button" data-toggle="collapse"  
+   
+        (click)="hideFilter = !hideFilter"  
+        aria-expanded="false" 
+        aria-controls="multiCollapseExample1">
+         Toggle both elements
+        </button>
+  -->
 
 <div class="container-fluid">
 
   <div class="row">
-    <div class="p-0  f-advance"    *ngIf="hideFilter">
-      <div class="collapse filter-advance" id="multiCollapseExample1">
-      <app-filter-advance (close)="hideFilter = $event"></app-filter-advance>
+    <div class="p-0  f-advance" [hidden]="hideFilter"   >
+      <div class=" filter-advance" id="multiCollapseExample1">
+      <app-filter-advance [filterB] = "hideFilter" (close)="hideFilter = $event"></app-filter-advance>
       </div>
     </div>
     <div  class="col">
-      <div class="" id="multiCollapseExample2">
           <app-boats></app-boats>
           <app-books></app-books>
-      </div>
     </div>
   </div>
 

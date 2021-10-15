@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BareboatsComponent implements OnInit {
 
-  hideFilter:boolean = false;
+  hideFilter:boolean = true;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-filter-advance',
@@ -8,6 +8,7 @@ import { Output, EventEmitter } from '@angular/core';
 export class FilterAdvanceComponent implements OnInit {
 
   @Output() close = new EventEmitter<boolean>();
+  @Input() filterB! : boolean;
 
   constructor() { }
 
@@ -15,7 +16,8 @@ export class FilterAdvanceComponent implements OnInit {
 
   }
   closeFilter() {
-    this.close.emit(false);
+    this.filterB = !this.filterB;
+    this.close.emit(this.filterB);
   }
 
 }
