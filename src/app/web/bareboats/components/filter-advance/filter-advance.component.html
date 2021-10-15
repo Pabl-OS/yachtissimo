@@ -1,6 +1,6 @@
 <div class="container-fluid pb-3">
     <div class="d-flex justify-content-between pt-3 ">
-        <h6>FILTERS</h6>
+        <h6>{{'filter-advance-title' | translate}}</h6>
         <button class="btn" 
                 (click)="closeFilter()"
                 >
@@ -8,7 +8,9 @@
         </button>
     </div>
       <div class="input-icon mt-5 mb-5">
-        <input class="search w-100 pt-2 " type="text" placeholder="YACHT NAME OR KEYBOARD" required>
+        <input class="search w-100 pt-2 " 
+               type="text" 
+               [placeholder]="'filter-advance-input' |translate" required>
         <img  src="./../../../../../assets/Header/Search.png"/>
       </div>
 
@@ -281,11 +283,15 @@
     <div>
         <div class="row mb-5">
             <div class="col-6 p-0  pl-1 pr-1">
-                <button class="btn  w-100 f-z8 font-medium btn-delete-filter">DELETE FILTERS</button>
+                <button class="btn  w-100 f-z8 font-medium btn-delete-filter">
+                  {{'filter-advance-btn-delete' |translate}}
+                </button>
             </div>
 
             <div class="col-6 p-0 pr-1">
-                <button class="btn  w-100 f-z8  font-medium btn-filter">VIEW RESULTS</button>
+                <button class="btn  w-100 f-z8  font-medium btn-filter">
+                  {{'filter-advance-btn-view' |translate}}
+                </button>
             </div>
         </div>
     </div>

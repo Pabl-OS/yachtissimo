@@ -11,6 +11,15 @@
 
     "filter-reset": "RESET ALL FILTERS",
     "filter-order": "ORDER BY",
+    "fiter-btn-advance" :"FILTER ADVANCE",
+    "filter-input": "YACHT NAME OR KEYBOARD",
+
+    "filter-advance-title": "FILTERS",
+    "filter-advance-input": "YACHT NAME OR KEYBOARD",
+    "filter-advance-btn-view": "VIEW RESULTS",
+    "filter-advance-btn-delete": "DELETE FILTERS",
+
+
 
 
     "go": "GO TO BOOK",

@@ -9,6 +9,14 @@
 
     "filter-reset": "RESTABLECER FILTROS",
     "filter-order": "ORDENAR POR",
+    "fiter-btn-advance" :"FILTRO AVANZADO",
+    "filter-input": "NOMBRE DEL YATE",
+
+    "filter-advance-title": "FILTROS",
+    "filter-advance-input": "NOMBRE DEL YATE",
+    "filter-advance-btn-view": "VER RESULTADOS",
+    "filter-advance-btn-delete": "ELIMINAR FILTROS",
+
 
 
     "go": "IR A RESERVAR",

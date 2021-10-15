@@ -51,14 +51,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="input-icon w-100">
-                    <input class="search  pt-2 " type="text" placeholder="YACHT NAME OR KEYBOARD" required>
+                    <input class="search  pt-2 " type="text" [placeholder]="'filter-input' | translate" required>
                     <img  src="./../../../../../assets/Header/Search.png"/>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-lg-end  justify-content-sm-center  ">
                 <button class="btn btn-filter-advance " 
                         type="button" (click)="closeFilterS()" >
-                    FILTER ADVANCE
+                    {{'fiter-btn-advance' | translate}}
                 </button>
             </div>
         </div>
