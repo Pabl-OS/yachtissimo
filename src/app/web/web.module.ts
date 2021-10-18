@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { WebRoutingModule } from './web-routing.module';
 import { WebComponent } from './web.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { SharedModule } from './shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 // import { HeaderComponent } from './shared/header/header.component';
 
@@ -12,17 +11,14 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     WebComponent,
-    HeaderComponent,
-    FooterComponent,
-
 
   ],
-
 
   imports: [
     CommonModule,
     WebRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ]
 })
 export class WebModule { }

@@ -7,9 +7,8 @@ import { FilterComponent } from './components/filter/filter.component';
 import { FilterAdvanceComponent } from './components/filter-advance/filter-advance.component';
 import { BoatsComponent } from './components/boats/boats.component';
 import { BooksComponent } from './components/books/books.component';
-import { PlusComponent } from './components/plus/plus.component';
-import { SocialComponent } from './components/social/social.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -20,8 +19,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     BooksComponent,
     FilterComponent,
     FilterAdvanceComponent,
-    PlusComponent,
-    SocialComponent
+   
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
@@ -29,7 +27,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   imports: [
     CommonModule,
     BareboatsRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
+    
   ]
 })
 export class BareboatsModule { }
