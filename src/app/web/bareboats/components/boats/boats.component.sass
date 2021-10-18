@@ -1,5 +1,8 @@
 @import './../../../../../styles'
 
+.card
+    border-radius: 0px!important    
+
 .container-top
     border-bottom: 1px solid $secondary-color
     padding-bottom: 10px
@@ -8,25 +11,11 @@
     border-left: 1px solid $secondary-color
 
 
-
-.card
-    border-radius: 0px!important
-    
-    &:hover
-        -webkit-transition: all 400ms ease-in
-        -webkit-transform: scale(1.03)
-        -ms-transition: all 400ms ease-in
-        -ms-transform: scale(1.03)
-        -moz-transition: all 400ms ease-in
-        -moz-transform: scale(1.03)
-        transition: all 400ms ease-in
-        transform: scale(1.03)
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon
     background-color: $white-color
-    height: 40px
-    width: 40px
+    height: 27px
+    width: 30px
     outline: black
     background-size: 100%, 100%
     border-radius: 50px 0px 0px 50px
@@ -38,18 +27,22 @@
 .carousel-control-next-icon:after
 
     content: '>'
-    font-size: 25px
+    font-size: 19px
     color: $primary-color
+
 
 .carousel-control-prev-icon:after
     content: '<'
-    font-size: 25px
+    font-size: 19px
     color: $secondary-color
 
 .carousel-control-prev,
 .carousel-control-next
     align-items: flex-end
     bottom: 5px
+a.carousel-control-prev
+    left: 300px
+    margin-left: 0
 
 .msg
     margin-left: 10px
@@ -62,40 +55,32 @@
     height: 15px
     width: 15px
 
-.scuba img ,.diamont img ,.video img
-    max-height:16px
-    margin-left: 10px
+.scuba img ,.diamont img ,.video img,.msg img
     @include mobile
         max-height: 14px
-        margin-left: 6px
+        margin-left: 5px
+    @include desktop
+        max-height:15px
+        margin-left: 10px
     @include desktopLarge
-        max-height: 20px
-
-    
+        max-height: 19px
+        margin-left: 6px
 
 .share img , .favorite img ,.compare img
-    max-height:16px
-    margin-left: 10px
     @include mobile
         max-height: 14px
+        margin-left: 7px
+    @include desktop
+        max-height:16px
+        margin-left: 10px
+    @include desktopLarge
+        max-height: 19px
         margin-left: 6px
 
-.price-boat
-    font-family: 'gothamrounded-medium', sans-serif
-    font-size: 9pt
 
-.plus-boat span,.description-boat
-    font-family: 'gothamrounded-book', sans-serif
-    font-size: 9pt
-
-.star img ,.msg img
+.star img
     width: 14px
     height: 14px
     margin:2px
     @include mobile
        max-height: 12px
-
-.title-boat
-    font-family: 'gothamrounded-medium', sans-serif
-    font-size: 19pt
-    text-transform: uppercase
