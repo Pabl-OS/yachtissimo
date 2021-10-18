@@ -26,22 +26,59 @@ $backs-color: #ffffff
 .gray-text-color
   color: $secondary-text-color
 
+
+@mixin mobile
+  @media only screen and (max-width: 768px)
+    @content
+@mixin desktop
+  @media only screen and (min-width: 1024px)
+    @content
+@mixin desktopLarge
+  @media only screen and (min-width: 1440px)
+    @content
+
 .f-z8
   font-size: 8pt
+  @include mobile
+    font-size: 7  pt
 
 .f-z10
   font-size: 10pt
+  @include mobile
+    font-size: 9pt
 
 .f-z13
-  font-size: 13pt
+  @include desktopLarge
+    font-size: 13pt!important
+  @include desktop
+    font-size: 12pt!important
+  @include mobile
+    font-size: 10pt!important
 
 .f-z19
-  font-size: 19pt
+  font-size: 19pt!important
+  @include desktop
+    font-size: 17pt!important
+  @include mobile
+    font-size: 15pt!important
 
 .f-z20
-  font-size: 20pt
+  font-size: 20pt!important
+  @include desktopLarge
+    font-size: 20pt!important
+  @include desktop
+    font-size: 17pt!important
+  @include mobile
+    font-size: 15pt!important
+
 .f-z25
-  font-size: 25pt
+  @include desktopLarge
+    font-size: 25pt!important
+  @include desktop
+    font-size: 20pt!important
+  @include mobile
+    font-size: 18pt!important
+
 
 .hover
   &:hover

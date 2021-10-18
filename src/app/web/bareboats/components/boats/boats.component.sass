@@ -65,10 +65,20 @@
 .scuba img ,.diamont img ,.video img
     max-height:16px
     margin-left: 10px
+    @include mobile
+        max-height: 14px
+        margin-left: 6px
+    @include desktopLarge
+        max-height: 20px
+
+    
 
 .share img , .favorite img ,.compare img
     max-height:16px
     margin-left: 10px
+    @include mobile
+        max-height: 14px
+        margin-left: 6px
 
 .price-boat
     font-family: 'gothamrounded-medium', sans-serif
@@ -82,6 +92,8 @@
     width: 14px
     height: 14px
     margin:2px
+    @include mobile
+       max-height: 12px
 
 .title-boat
     font-family: 'gothamrounded-medium', sans-serif
