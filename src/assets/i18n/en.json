@@ -1,5 +1,5 @@
 {
-    "header-item1": "YACHTS",
+    "header-item1": "LUXURY YACHTS",
     "header-item2": "BAREBOATS",
     "header-item3": "DESTINATIONS",
     "header-item4": "BLOG",
@@ -15,7 +15,7 @@
     "filter-input": "YACHT NAME OR KEYBOARD",
 
     "filter-advance-title": "FILTERS",
-    "filter-advance-input": "YACHT NAME OR KEYBOARD",
+    "filter-advance-input": "Search by name",
     "filter-advance-btn-view": "VIEW RESULTS",
     "filter-advance-btn-delete": "DELETE FILTERS",
 

@@ -1,5 +1,5 @@
 {
-    "header-item1": "YATES",
+    "header-item1": "YATES DE LUJO",
     "header-item2": "VELEROS",
     "header-item3": "DESTINOS",
     "header-item4": "BLOG",
@@ -13,7 +13,7 @@
     "filter-input": "NOMBRE DEL YATE",
 
     "filter-advance-title": "FILTROS",
-    "filter-advance-input": "NOMBRE DEL YATE",
+    "filter-advance-input": "Buscar por nombre",
     "filter-advance-btn-view": "VER RESULTADOS",
     "filter-advance-btn-delete": "ELIMINAR FILTROS",
 

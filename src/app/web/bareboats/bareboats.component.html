@@ -13,8 +13,8 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="p-0  f-advance" [hidden]="hideFilter" >
-      <div class=" filter-advance" id="multiCollapseExample1">
+    <div class="p-0  f-advance" [hidden]="!hideFilter" >
+      <div class=" filter-advance" id="mul0tiCollapseExample1">
       <app-filter-advance [filterB] = "hideFilter" (close)="hideFilter = $event"></app-filter-advance>
       </div>
     </div>

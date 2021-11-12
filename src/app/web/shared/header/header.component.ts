@@ -20,6 +20,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  
+
+
+
   setLang(lang: string) {
     localStorage.setItem('lang', lang);
     this.setLangName();
