@@ -12,10 +12,20 @@
     "fiter-btn-advance" :"FILTRO AVANZADO",
     "filter-input": "NOMBRE DEL YATE",
 
+    "ly-type":"YATES POR TIPO",
+    "ly-destination":"YATES POR DESTINO",
+    "ly-charter":"TIPO DE CARTA",
+    "ly-offers":"OFFERTAS DE YATES",
+    "ly-top":"TOP YATES",
+
+    "ly-search":"BUSCAR TODOS LOS YATES",
+
+
     "filter-advance-title": "FILTROS",
-    "filter-advance-input": "Buscar por nombre",
+    "filter-advance-input": "Buscar por nombre  ",
     "filter-advance-btn-view": "VER RESULTADOS",
     "filter-advance-btn-delete": "ELIMINAR FILTROS",
+
 
 
 

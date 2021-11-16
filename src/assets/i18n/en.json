@@ -19,6 +19,13 @@
     "filter-advance-btn-view": "VIEW RESULTS",
     "filter-advance-btn-delete": "DELETE FILTERS",
 
+    "ly-type":"YACHTS BY TYPE",
+    "ly-destination":"YACHT BY DESTINATION",
+    "ly-charter":"CHARTER TYPES",
+    "ly-offers":"YACHT OFFERS",
+    "ly-top":"TOP YACHTS",
+
+    "ly-search":"SEARCH ALL YACHTS",
 
 
 

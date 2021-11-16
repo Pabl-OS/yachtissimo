@@ -71,8 +71,74 @@
      
         </div>
         <ul class="navbar-nav  menu bg-light justify-content-center text-center ">
-            <li class="nav-item">
-                <a class="nav-link  selected">{{'header-item1'| translate }}</a>
+
+            <li class="nav-item dropdown megamenu selected">
+                <a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                class="nav-link">{{'header-item1'| translate }}</a>
+                <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                        <div class="row  bg-white rounded-0 m-0 shadow-sm">
+                            <div class="col-xl-1">
+
+                            </div>
+                            <div class="col-lg-4 col-xl-3 mt-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-group p-2">
+                                                <li class="f-z13 font-book mt-2  m-0 d-flex justify-content-between align-items-center">
+                                                  {{'ly-type' |translate}}
+                                                  <span class="f-z13 font-book badge badge-primary badge-pill"></span>
+                                                </li>
+                                                <li class="f-z13 font-book mt-2  m-0 d-flex justify-content-between align-items-center">
+                                                  {{'ly-destination'|translate}}                               
+                                                </li>
+                                                <li class="f-z13 font-book  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                                    {{'ly-type'|translate}}
+                                                  </li>
+                                                  <li class="f-z13 font-book  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                                    {{'ly-offers'|translate}}
+                                                  </li>
+                                                  <li class="f-z13 font-book  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                                    {{'ly-top'|translate}}                
+                                                  </li>
+                                                  <li class="f-z13 font-book  mt-4 m-0 d-flex justify-content-between align-items-center">
+                                                    {{'ly-search'|translate}}
+                                                  </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-6 h-100">
+                                <ul class="list-group p-2">
+                                    <li class="list-group-item m-0 d-flex justify-content-between align-items-center">
+                                      {{'ly-type' |translate}}
+                                      <span class="badge badge-primary badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item m-0 d-flex justify-content-between align-items-center">
+                                      {{'ly-destination'|translate}}
+                                      <span class="badge badge-primary badge-pill">1</span>
+                                    </li>
+
+                                    <li class="list-group-item m-0 d-flex justify-content-between align-items-center">
+                                        {{'ly-type'|translate}}
+                                        <span class="badge badge-primary badge-pill">2</span>
+                                      </li>
+                                      <li class="list-group-item m-0 d-flex justify-content-between align-items-center">
+                                        {{'ly-offers'|translate}}
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                      </li>
+                                      <li class="list-group-item m-0 d-flex justify-content-between align-items-center">
+                                        {{'ly-top'|translate}}
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                      </li>
+
+                                      <li class="list-group-item mt-4 m-0 d-flex justify-content-between align-items-center">
+                                        {{'ly-search'|translate}}
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link">{{'header-item2'| translate }}</a>
@@ -89,10 +155,10 @@
             <li class="nav-item">
                 <a class="nav-link">{{'header-item6'| translate }}</a>
             </li>
+           
         </ul>
     
     </div>
 </nav>
-
 
 

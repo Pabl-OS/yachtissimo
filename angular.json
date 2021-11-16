@@ -36,7 +36,9 @@
             "styles": [
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/mega.js"
+            ]
           },
           "configurations": {
             "production": {
