@@ -1,9 +1,5 @@
-<div class="container-fluid pb-3">
+<div class="container-fluid pb-3 " >
 
-  <div class="btn-group mr-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-dark">M</button>
-    <button type="button" class="btn btn-white">FT</button>
-    </div>
     <div class="d-flex justify-content-between pt-3 ">
         <h6>{{'filter-advance-title' | translate}}</h6>
         <button class="btn" 
@@ -12,20 +8,61 @@
           <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="delete">
         </button>
     </div>
-      <div class="input-icon mt-5 mb-5">
-        <input class="search w-100 pt-2 " 
-               type="text" 
-               [placeholder]="'filter-advance-input' |translate" required>
-        <img  src="./../../../../../assets/Header/Search.png"/>
+    <div class="row pt-3">
+      <div class="col-6  ">
+        <div class="btn-group m-0" role="group" aria-label="money group">
+          <button type="button"
+                  (click)="typeMoney=true"
+                  [ngClass]="(typeMoney)?'btn-dark':'btn-white'" 
+                  class="btn f-z10 font-medium m-0 ">$</button>
+          <button type="button"
+                  (click)="typeMoney=false"
+                  [ngClass]="(!typeMoney)?'btn-dark':'btn-white'" 
+                  class="btn f-z10 font-medium m-0 ">€</button>
+        </div>
       </div>
+      <div class="col-6 p-0">
+        <div class="btn-group m-0 " role="group" aria-label="size group">
+          <button type="button" class="btn f-z10 font-medium m-0 " 
+                  (click)="typeSize=true"
+                  [ngClass]="(!typeSize)?'btn-white':'btn-dark'" >
+                  M</button>
+          <button type="button" class="btn f-z10 font-medium m-0 " 
+                  (click)="typeSize=false"
+                  [ngClass]="(typeSize)?'btn-white':'btn-dark'" >
+                  FT</button>
+        </div>
+      </div>
+    </div>
 
-    <div class="w-100 mt-2  section-content">
+    <!-- nav for select type search or all filter -->
+    <ul class="nav nav-tabs mt-3">
+      <li class="nav-item">
+        <a class="nav-link f-z8 font-medium "
+            (click)="byDetails = true"
+            [ngClass]="(byDetails)?'active': '' ">BY DETAILS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link f-z8 font-medium "
+            (click)="byDetails = false"
+        [ngClass]="(!byDetails)?'active': '' " >BY NAME</a>
+      </li>
+    </ul>
+    <!-- input for search -->
+    <div [hidden]="byDetails" class="input-icon mt-5 mb-5">
+      <input class="search w-100 pt-2 " 
+             type="text" 
+             [placeholder]="'filter-advance-input' |translate" required>
+      <img  src="./../../../../../assets/Header/Search.png"/>
+    </div>
+    <div  [hidden]="!byDetails" >
+      <div class="w-100 mt-5 section-content">
         <label class="f-z8">SKIPPER/CREW</label>
-    </div>
-    <div class="w-100 mt-5  section-content">
+      </div>
+      <div class="w-100 mt-5  section-content">
         <label class="f-z8">BAHAMAS</label>
-    </div>
-    <div class="w-100 mt-5  section-content">
+      </div>
+      <div class="w-100 mt-5  section-content">
         <label class="f-z8">ALL TYPE</label>
         <ul class="p-0">
             <li>
@@ -52,13 +89,9 @@
             <li>
                 <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 47.png">RIB </label>
             </li>
-
         </ul>
-
-    </div>
-
-  
-    <div class="row mt-4">
+      </div>
+      <div class="row mt-4">
         <div class="col-12 p-1">
             <div class='date-picker' id='datetimepicker1'>
                 <input type='date' class="form-control"/>
@@ -69,8 +102,8 @@
             <input type='date' class="form-control"/>
           </div>
         </div>
-    </div>
-    <div class="w-100 mt-5 ">
+      </div>
+      <div class="w-100 mt-5 ">
         <form>
             <div class="form-group range-container mt-5">
               <label for="formControlRange" class="f-z8 range">PRICE</label>
@@ -89,27 +122,23 @@
             </div>
         </form>
 
-    </div>
-
-    <div class="w-100 mt-5 f-z8  section-content">
+      </div>
+      <div class="w-100 mt-5 f-z8  section-content">
         <label>7 NIGHTS</label>
-    </div>
-    <div class="w-100 mt-5 f-z8  section-content">
+      </div>
+      <div class="w-100 mt-5 f-z8  section-content">
         <label>4 GUEST</label>
-    </div>  
-    <div class="w-100 mt-5 f-z8  section-content">
+      </div>  
+      <div class="w-100 mt-5 f-z8  section-content">
         <label>6 CABINS</label>
-    </div>  
-
-
-    <div class="w-100 mt-5 ">
+      </div>  
+      <div class="w-100 mt-5 ">
         <label class="selected-text-color font-medium f-z8" >SPECIAL OFFERS!</label>
         <div class="w-100">
           <img class="mt-3" src="../../../../../assets/Imagenes catálogo/Alice.png" width="100%" srcset="">
         </div>
-    </div>  
-
-    <div class="w-100 mt-5 ">
+      </div>  
+      <div class="w-100 mt-5 ">
        <div class="gradiant  d-flex justify-content-center" >
             <label class="font-medium white-text-color   text-center mt-3 mb-3 f-z8"> 
               <span> <img width="30px" class="mr-2"  src="../../../../../assets/Header/Advanced filters.png"></span> 
@@ -284,7 +313,9 @@
 
          <button class="font-medium btn f-z8" > See all +241</button>
     </div>
-    </div>  
+      </div> 
+    </div>
+    
     <div>
         <div class="row mb-5">
             <div class="col-6 p-0  pl-1 pr-1">

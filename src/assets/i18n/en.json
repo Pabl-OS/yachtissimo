@@ -27,6 +27,22 @@
 
     "ly-search":"SEARCH ALL YACHTS",
 
+    "by-type":"BAREBOATS BY TYPE",
+    "by-destination":"BAREBOAT BY DESTINATION",
+    "by-charter":"CHARTER TYPES",
+    "by-offers":"BAREBOAT OFFERS",
+    "by-top":"TOP BAREBOATS",
+
+    "by-search":"SEARCH ALL BAREBOATS",
+    
+
+    "bl-lastest":"LATEST ARTICLES ",
+    "bl-charter":"CHARTER ADVICE",
+    "bl-destination":"YACHT DESTINATIONS",
+    "bl-reviews":"INSIDER TIPS",
+    "bl-events":"EVENTS",
+
+    "bl-go":"GO TO BLOG",
 
 
     "go": "GO TO BOOK",

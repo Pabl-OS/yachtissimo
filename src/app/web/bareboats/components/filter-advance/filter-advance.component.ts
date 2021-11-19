@@ -9,6 +9,9 @@ export class FilterAdvanceComponent implements OnInit {
 
   @Output() close = new EventEmitter<boolean>();
   @Input() filterB! : boolean;
+  byDetails: boolean = true;
+  typeMoney: boolean = true;
+  typeSize: boolean = true;
 
   constructor() { }
 

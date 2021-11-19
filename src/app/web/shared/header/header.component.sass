@@ -1,8 +1,18 @@
 @import './../../../../styles.sass'
 
+
+.form-company input,.form-company textarea
+    border-radius: 0px
+    border: 1px solid $dark-color
+.form-company button
+    border-radius: 0px
+    background-color: $dark-color
+
 .icon
     max-width: 18px
     color: $secondary-text-color
+
+
 
 .menu
     border-bottom: 2px solid $secondary-text-color
@@ -35,14 +45,12 @@
 .navbar-brand
     margin-right: 0px
 
-@media (max-width: 750px)
+@media (max-width: 992px)
     .phone-number
         justify-content: center
         span
             font-size: 8pt
             padding-right: 30px
-
-
 
 
 .megamenu
@@ -56,3 +64,17 @@
 li
     margin: 0px
     border: none
+
+
+.slick-slider
+    width: 100%
+    // max-width: 300px
+    margin: auto
+  
+  
+body .slick-prev, body .slick-next
+    height: 50px
+    width: 50px
+    background: dark !important
+    z-index: 100
+

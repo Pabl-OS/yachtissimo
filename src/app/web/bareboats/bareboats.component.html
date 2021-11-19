@@ -12,24 +12,22 @@
 
 <div class="container-fluid">
 
-  <div class="row">
-    <div class="p-0  f-advance" [hidden]="!hideFilter" >
-      <div class=" filter-advance" id="mul0tiCollapseExample1">
-      <app-filter-advance [filterB] = "hideFilter" (close)="hideFilter = $event"></app-filter-advance>
+    <div class="row d-father">
+      <div class="p-0  f-advance" [hidden]="hideFilter" >
+        <app-filter-advance [filterB] = "hideFilter" (close)="hideFilter = $event"></app-filter-advance>
+      </div>
+      <div  class="col boats">
+        <app-boats ></app-boats>
       </div>
     </div>
-    <div  class="col">
+ 
+
+        <app-books ></app-books>
+  
+        <app-plus ></app-plus>
+
+        <app-social ></app-social>
       
-              <app-boats ></app-boats>
-         
-
-
-          <app-books></app-books>
-          
-    </div>
-  </div>
-
-  <app-plus></app-plus>
-  <app-social></app-social>
+    
 
 </div>      

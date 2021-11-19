@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { PlusComponent } from './plus/plus.component';
 import { SocialComponent } from './social/social.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 
@@ -18,6 +20,7 @@ import { SocialComponent } from './social/social.component';
   ],
   imports: [
     CommonModule,
+    SlickCarouselModule,
     RouterModule,
     TranslateModule
   ],
