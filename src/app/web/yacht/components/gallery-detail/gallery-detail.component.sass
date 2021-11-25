@@ -1,16 +1,11 @@
 @import './../../../../../styles'
-
-.add-compare
-    border: 2px solid $primary-color
-
-
-
-.card
-    border-radius: 0px!important
-    &:hover
-        box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
-        -webkit-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
-        -moz-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)    
+.card-about
+    border: 0.13rem solid $dark-color
+    h3
+        color: $dark-color 
+    input,select
+        border-radius: 0px  
+        border: 0.13rem solid $dark-color 
 
 .container-top
     border-bottom: 1px solid $secondary-color
@@ -22,33 +17,39 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon
-    height: 27px
-    width: 30px
-    outline: black
     background-image: none
 
-
 .carousel-control-next-icon:after
-
     content: '>'
     font-weight: 700
-    font-size: 40px
+    font-size: 60px
     color: $white-color
+    @include mobile
+        font-size: 40px
 
 
 .carousel-control-prev-icon:after
     content: '<'
     font-weight: 700
-    font-size: 40px
+    font-size: 60px
     color: $white-color
+    @include mobile
+        font-size: 40px
 
 .carousel-control-prev,
 .carousel-control-next
     align-items: flex-end
-    bottom: 30px
+    bottom: 70px
+    @include mobile
+        bottom: 40px
+
 a.carousel-control-prev
-    left: calc( 100% - 100px  )!important
+    left: calc( 100% - 200px  )!important
     margin-left: 0
+    @include mobile
+        left: calc( 100% - 100px  )!important
+.details-card
+    color: $secondary-color
 
 .msg
     margin-left: 10px
@@ -62,10 +63,10 @@ a.carousel-control-prev
     width: 15px
 
 .scuba img ,.diamont img ,.video img,.msg img
-    max-height: 15px
-    margin-left: 5px
+    max-height: 18px
+    margin-left: 8px
     @include mobile
-        max-height: 14px
+        max-height: 18px
         margin-left: 5px
 
     @include desktopLarge
@@ -73,19 +74,19 @@ a.carousel-control-prev
         margin-left: 6px
 
 .share img , .favorite img ,.compare img
-    max-height: 15px
-    margin-left: 5px
+    max-height: 20px
+    margin-left: 8px
     @include mobile
-        max-height: 14px
+        max-height: 18px
         margin-left: 7px
     @include desktopLarge
-        max-height: 19px
+        max-height: 22px
         margin-left: 6px
 
 
 .star img
-    width: 14px
-    height: 14px
+    width: 16px
+    height: 16px
     margin:2px
     @include mobile
-       max-height: 12px
+       max-height: 18px

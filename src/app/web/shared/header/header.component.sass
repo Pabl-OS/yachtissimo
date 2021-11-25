@@ -12,7 +12,8 @@
     max-width: 18px
     color: $secondary-text-color
 
-
+.navbar-light .navbar-toggler
+    border: none !important
 
 .menu
     border-bottom: 2px solid $secondary-text-color
@@ -51,6 +52,13 @@
         span
             font-size: 8pt
             padding-right: 30px
+    .menu li
+        margin-left: 5px
+        margin-right: 5px
+    .hidden
+        visibility: hidden
+        width: 0px
+        height: 0px
 
 
 .megamenu
@@ -78,3 +86,6 @@ body .slick-prev, body .slick-next
     background: dark !important
     z-index: 100
 
+.nabvar
+    z-index: 999
+    position: static

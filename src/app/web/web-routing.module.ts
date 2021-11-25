@@ -14,6 +14,11 @@ const routes: Routes = [
   
       },
       {
+        path:'yacht',
+        loadChildren:()=> import('./yacht/yacht.module').then(m => m.YachtModule)
+  
+      },
+      {
         path:'compare',
         loadChildren:()=> import('./compare/compare.module').then(m => m.CompareModule)
       },

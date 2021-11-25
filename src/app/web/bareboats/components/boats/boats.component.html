@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12  p-1 m-w  col-md-12 col-lg-6 col-xl-4">
-        <div #card class="card  w-100 mb-3" >
+        <div #card class="card  w-100 mb-3"
+            [routerLink]="['/web/yacht']" >
            <div id="carouselExampleControls" class="carousel " data-ride="carousel2">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -72,7 +73,8 @@
         </div>
       </div>
       <div class="col-sm-12  p-1 m-w  col-md-12 col-lg-6 col-xl-4">
-        <div #card class="card  w-100 mb-3" >
+        <div #card class="card add-compare w-100 mb-3" 
+                   [routerLink]="['web/yacht']">
            <div id="carouselExampleControls" class="carousel " data-ride="carousel2">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -143,7 +145,8 @@
         </div>
       </div>
       <div class="col-sm-12  p-1 m-w  col-md-12 col-lg-6 col-xl-4">
-        <div #card class="card  w-100 mb-3" >
+        <div #card class="card  w-100 mb-3"
+           >
            <div id="carouselExampleControls" class="carousel " data-ride="carousel2">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -163,7 +166,8 @@
                           <span class="sr-only">Next</span>
                         </a>
            </div>
-           <div class="card-body">
+           <div class="card-body"
+                [routerLink]="['/web/yacht']">
                          <h2 class="title-boat text-medium f-z19">TITLE BOAT</h2>
                         <div class="d-flex w-100 justify-content-between container-top">
                                 <div class="col-9 p-0 ">

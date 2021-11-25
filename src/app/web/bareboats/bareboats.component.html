@@ -1,16 +1,8 @@
-<app-filter  [filterB] = "hideFilter" (closeFilter)="hideFilter = $event"  ></app-filter>
 
-<!-- <button class="btn btn-primary mt-3 mb-3" 
-        type="button" data-toggle="collapse"  
-   
-        (click)="hideFilter = !hideFilter"  
-        aria-expanded="false" 
-        aria-controls="multiCollapseExample1">
-         Toggle both elements
-        </button>
-  -->
+
 
 <div class="container-fluid">
+  <app-filter  [filterB] = "hideFilter" (closeFilter)="hideFilter = $event"  ></app-filter>
 
     <div class="row d-father">
       <div class="p-0  f-advance" [hidden]="hideFilter" >

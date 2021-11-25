@@ -1,0 +1,39 @@
+
+<app-gallery-detail></app-gallery-detail>
+
+<div class="col-xl-9">
+    <ul class="nav nav-tabs mt-3 justify-content-start justify-content-lg-between mb-4">
+        <li class="nav-item">
+          <a class="nav-link f-z13 font-book " [routerLink]="['./specification']" routerLinkActive="active" >
+              SPECIFICATIONS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link f-z13 font-book " [routerLink]="['./crew']" routerLinkActive="active" >
+              CREW
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link f-z13 font-book " [routerLink]="['./calendar']" routerLinkActive="active" >
+            RATES&CALENDAR 
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link f-z13 font-book" [routerLink]="['./review']" routerLinkActive="active">
+              REVIEWS 
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link f-z13 font-book" [routerLink]="['./review']" routerLinkActive="active">
+                MENU 
+            </a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link f-z13 font-book" >VIDEOS </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>

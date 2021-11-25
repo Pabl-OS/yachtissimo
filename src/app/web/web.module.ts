@@ -18,7 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     WebRoutingModule,
     TranslateModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class WebModule { }
