@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CalendarComponent } from './page/calendar/calendar.component';
 import { CrewComponent } from './page/crew/crew.component';
 import { DetailsComponent } from './page/details/details.component';
+import { MenuComponent } from './page/menu/menu.component';
 import { ReviewComponent } from './page/review/review.component';
 import { YachtComponent } from './yacht.component';
 
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path:'review',
         component:ReviewComponent
+      },
+      {
+        path:'menu',
+        component: MenuComponent
       },
       {
         path:'**',

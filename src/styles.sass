@@ -12,11 +12,7 @@ $title-text-color: #000000
 $secondary-text-color: #a3a3a3
 $selected-text-color: #bf7d71
 
-// buttons
-$buttons-colors: #ffffff
 
-// back color
-$backs-color: #ffffff
 
 // class for colors text
 .selected-text-color
@@ -38,6 +34,57 @@ $backs-color: #ffffff
 @mixin desktopLarge
   @media only screen and (min-width: 1440px)
     @content
+@mixin font-book
+  font-family: 'gothamrounded-book'
+@mixin font-medium
+  font-family: 'gothamrounded-medium'
+
+@mixin f-z8
+  font-size: 8pt
+  @include mobile
+    font-size: 7pt
+
+@mixin f-z9
+ font-size: 9pt!important
+  @include desktop
+    font-size: 9pt!important
+  @include mobile
+    font-size: 8pt
+  
+
+@mixin f-z10
+  font-size: 10pt
+  @include mobile
+    font-size: 9pt
+
+@mixin f-z13
+  font-size: 13pt!important
+  @include desktop
+    font-size: 12pt!important
+  @include mobile
+    font-size: 11pt!important
+
+@mixin f-z19
+  @include desktop
+    font-size: 15pt!important
+  @include mobile
+    font-size: 13pt!important
+
+@mixin f-z20
+
+  font-size: 20pt!important
+  @include desktop
+    font-size: 18pt!important
+  @include mobile
+    font-size: 17pt!important
+
+@mixin f-z25
+  font-size: 25pt!important
+  @include desktop
+    font-size: 23pt!important
+  @include mobile
+    font-size: 19pt!important
+
 
 .f-z8
   font-size: 8pt
@@ -109,6 +156,28 @@ $backs-color: #ffffff
 
 .cursor
   cursor: pointer
+
+.btn-dark, .btn-light
+  border-radius: 0px !important
+  background-color: $dark-color 
+  span
+    padding-left: 20px
+    padding-right: 20px
+    @include f-z13
+    @include font-book
+    @include mobile
+      padding-left: 10px
+      padding-right: 10px
+      li
+        @include f-z20
+        font-weight: 600
+  
+      
+    
+.btn-light
+  background-color: $white-color
+  border: 1px solid $dark-color
+
 
 .card
   border-radius: 0px

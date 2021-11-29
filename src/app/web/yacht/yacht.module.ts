@@ -12,6 +12,7 @@ import { CalendarComponent } from './page/calendar/calendar.component';
 import { ReviewComponent } from './page/review/review.component';
 import { VideoComponent } from './page/video/video.component';
 import { CrewProfileComponent } from './components/crew-profile/crew-profile.component';
+import { MenuComponent } from './page/menu/menu.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CrewProfileComponent } from './components/crew-profile/crew-profile.com
     CalendarComponent,
     ReviewComponent,
     VideoComponent,
-    CrewProfileComponent
+    CrewProfileComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
