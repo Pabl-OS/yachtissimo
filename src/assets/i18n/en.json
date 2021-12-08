@@ -2,7 +2,7 @@
     "header-item1": "LUXURY YACHTS",
     "header-item2": "BAREBOATS",
     "header-item3": "DESTINATIONS",
-    "header-item4": "BLOG",
+    "header-item4": "BLOG & EVENTS",
     "header-item5": "COMPANY",
     "header-item6": "ENQUIRE",
 
@@ -39,6 +39,7 @@
     "bl-lastest":"LATEST ARTICLES ",
     "bl-charter":"CHARTER ADVICE",
     "bl-destination":"YACHT DESTINATIONS",
+    "bl-tips":"YACHT REVIEWS",
     "bl-reviews":"INSIDER TIPS",
     "bl-events":"EVENTS",
 

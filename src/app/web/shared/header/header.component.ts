@@ -1,20 +1,22 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
-
+import { HeaderInterface } from 'src/app/interfaces/header/Header.interface';
+declare var $: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass'],
-
-
 })
-export class HeaderComponent implements OnInit {
+
+export class HeaderComponent implements OnInit,AfterViewInit {
   @ViewChild('carouselExample') carrousel!: ElementRef;
   langs: string[] = [];
   nameLang: string = "";
   isCollapsed = true;
   collapsed:boolean =false;
+  charged:boolean = false;
+
+  carousel: HeaderInterface= {};
 
  
 
@@ -35,10 +37,10 @@ export class HeaderComponent implements OnInit {
     this.translateService.use(this.nameLang);
   }
   slides = [
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"}
+    {img: "./assets/Imagenes/Imagenes catálogo/Alizé.png"},
+    {img: "./assets/Imagenes/Imagenes catálogo/Alice.png"},
+    {img: "./assets/Imagenes/Imagenes catálogo/Elvira.png"},
+    {img: "./assets/Imagenes/Imagenes catálogo/Luna.png"}
   ];
   slideConfig = {
   "slidesToShow": 3, 
@@ -56,44 +58,39 @@ export class HeaderComponent implements OnInit {
     {
       'breakpoint': 600,
       'settings': {
-        'slidesToShow': 3
+        'slidesToShow': 1,
+        "slidesToScroll": 1,
       }
     },
     {
       'breakpoint': 480,
       'settings': {
-        'slidesToShow': 2
+        'slidesToShow': 1,
+        "slidesToScroll": 1,
       }
     }
   ]
  };
   
-  addSlide() {
-    this.slides.push({img: "http://placehold.it/350x150/777777"})
-  }
   
-  removeSlide() {
-    this.slides.length = this.slides.length - 1;
-  }
-  
-  slickInit(e:any) {
-    console.log('slick initialized');
-  }
-  
-  breakpoint(e:any) {
-    console.log('breakpoint');
-  }
-  
-  afterChange(e:any) {
-    console.log('afterChange');
-  }
-  
-  beforeChange(e:any) {
-    console.log('beforeChange');
-  }
 
-  ngOnInit(){}
+  ngOnInit(){
+    
+    
+  }
  
-  
+  ngAfterViewInit(){
+    $(document).ready(function() {
+      "use strict";
+    
+      $('ul.navbar-nav > li').click(function(e:any) {
+        e.preventDefault();
+        $('ul.navbar-nav > li').removeClass('active');
+        $().addClass('active');
+      });
+    });
+
+  }
+ 
 
 }

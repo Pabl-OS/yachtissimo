@@ -2,7 +2,7 @@
     "header-item1": "YATES DE LUJO",
     "header-item2": "VELEROS",
     "header-item3": "DESTINOS",
-    "header-item4": "BLOG",
+    "header-item4": "BLOG Y EVENTOS",
     "header-item5": "COMPANIA",
     "header-item6": "PREGUNTAR",
 
@@ -20,6 +20,16 @@
 
     "ly-search":"BUSCAR TODOS LOS YATES",
 
+
+
+    
+    "bl-lastest":"ÚLTIMOS ARTICULOS ",
+    "bl-charter":"ASESORIAS",
+    "bl-destination":"DESTINOS",
+    "bl-tips":"CONSEJO DE EXPERTOS",
+    "bl-reviews":"REVIEW DE YATES",
+    "bl-events":"EVENTOS",
+    "bl-go":"IR AL BLOG",
 
     "filter-advance-title": "FILTROS",
     "filter-advance-input": "Buscar por nombre  ",

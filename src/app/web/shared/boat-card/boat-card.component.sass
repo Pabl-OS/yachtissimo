@@ -1,9 +1,7 @@
-@import './../../../../../styles'
+@import './../../../../styles'
 
 .add-compare
     border: 2px solid $primary-color
-
-
 
 .card
     border-radius: 0px!important
@@ -12,16 +10,12 @@
         -webkit-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
         -moz-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)    
 
-.card-contact
-    border: none 
-    background-color: #eeeeee
-    
 .carousel-caption
     left: 0px
     top: 0px
     .c-banner
         margin-left: 5px
-        max-width: 200px
+        max-width: 140px
 
 .container-top
     border-bottom: 1px solid $secondary-color
@@ -29,6 +23,10 @@
 
 .container-top .other-options
     border-left: 1px solid $secondary-color
+.border-bottom
+    border-bottom: 1px solid $secondary-color !important
+.border-right
+    border-right: 1px solid $secondary-color !important
 
 
 .carousel-control-prev-icon,
@@ -40,64 +38,73 @@
 
 
 .carousel-control-next-icon:after
-
-    content: '>'
-    font-weight: 500
-    font-size: 40px
+    font-family: 'FontAwesome'
+    content: '\f054'
+    font-weight: 300
+    font-size: 25px
     color: $white-color
 
 
 .carousel-control-prev-icon:after
-    content: '<'
-    font-weight: 500
-    font-size: 40px
+    font-family: 'FontAwesome'
+    content: '\f053'
+    font-weight: 300
+    font-size: 25px
     color: $white-color
 
 .carousel-control-prev,
 .carousel-control-next
     align-items: flex-end
-    bottom: 30px
+    bottom: 15px
 a.carousel-control-prev
-    left: calc( 100% - 220px  )!important
+    left: calc( 100% - 25%  )!important
     margin-left: 0
 
-.msg
-    margin-left: 10px
+
 .more-info
-    background-color: $white-color
-    border-radius: 50px 
-    border: 1px solid $dark-color
-    color: $dark-color
-    font-size: 8pt
+    background-color: #000
+    border-radius: 50px
+    color: $white-color
+    font-size: 7pt
     padding: 2px
     height: 15px
     width: 15px
 
-.scuba img ,.diamont img ,.video img,.msg img
-    max-height: 19px
+.scuba,.diamont,.video
+    max-height: 18px
     margin-left: 5px
     @include mobile
-        max-height: 16px
+        max-height: 15px
         margin-left: 5px
-
     @include desktopLarge
-        max-height: 19px
+        max-height: 22px
         margin-left: 6px
 
-.share img , .favorite img ,.compare img
-    max-height: 19px
+.share, .favorite,.compare
+    max-height: 18px
     margin-left: 5px
     @include mobile
-        max-height: 16px
+        max-height: 15px
         margin-left: 5px
     @include desktopLarge
-        max-height: 19px
+        max-height: 22px
         margin-left: 6px
 
 
-.star img
-    width: 16px
-    height: 16px
-    margin:2px
+.star
+    width: 13px
+    height: 13px
+    margin:1px
     @include mobile
-       max-height: 15px
+       max-height: 12px
+    @include desktopLarge
+        max-height: 22px
+        margin-left: 2px
+.msg
+    margin-left: 2px
+    max-height: 13px
+    @include mobile
+       max-height: 12px
+    @include desktopLarge
+        max-height: 22px
+        margin-left: 2px

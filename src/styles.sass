@@ -1,6 +1,9 @@
 .selector-for-some-widget
   box-sizing: content-box
 
+
+
+
 // colors
 $primary-color: #bf7d71
 $secondary-color: #c5c3c1
@@ -57,12 +60,20 @@ $selected-text-color: #bf7d71
   @include mobile
     font-size: 9pt
 
+
+@mixin f-z11
+  font-size: 11pt!important
+  @include mobile
+    font-size: 10pt!important
+
+
+
 @mixin f-z13
   font-size: 13pt!important
   @include desktop
     font-size: 12pt!important
   @include mobile
-    font-size: 11pt!important
+    font-size: 12pt!important
 
 @mixin f-z19
   @include desktop
@@ -126,6 +137,13 @@ $selected-text-color: #bf7d71
   @include mobile
     font-size: 17pt!important
 
+.f-z23
+  font-size: 23pt!important
+  @include desktop
+    font-size: 19pt!important
+  @include mobile
+    font-size: 18pt!important    
+
 .f-z25
   font-size: 25pt!important
   @include desktop
@@ -182,3 +200,10 @@ $selected-text-color: #bf7d71
 .card
   border-radius: 0px
   border: 1px solid $secondary-color
+.p-auto
+  @include mobile
+    padding: 5px
+  @include desktop
+    padding: 20px
+  @include desktopLarge
+    padding: 30px

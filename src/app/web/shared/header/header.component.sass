@@ -7,9 +7,10 @@
 .form-company button
     border-radius: 0px
     background-color: $dark-color
-
+img
+    max-height: 250px
 .icon
-    max-width: 20px
+    max-height: 18px
     color: $secondary-text-color
 
 .navbar-light .navbar-toggler
@@ -20,7 +21,6 @@
     width: 100%
 .menu li
     cursor: pointer
-    font-family: 'gothamrounded-medium', sans-serif
     margin-right: 35px
     margin-left: 35px
     a
@@ -36,7 +36,7 @@
 
 .phone-number span
     color: $secondary-text-color
-    font-family: 'gothamrounded-medium', sans-serif
+    font-family: 'gothamrounded-book', sans-serif
     font-size: 10pt
     padding-right: 70px
     justify-content: start!important
@@ -72,12 +72,41 @@
 li
     margin: 0px
     border: none
+    @include font-book
+    
 
+i
+    color: $secondary-color
+    
+.arrow-icon
+    max-height: 18px
+
+body .slick-prev, 
+body .slick-next
+    height: 45px
+    width: 40px
 
 .slick-slider
-    width: 100%
+    width: 93%
     // max-width: 300px
     margin: auto
+    @media only screen and (max-width: 960px)
+        max-width:700px
+
+    @media only screen and (max-width: 700px)
+        max-width:550px
+
+    @media only screen and (max-width: 600px)
+        max-width:450px
+
+    @media only screen and (max-width: 500px)
+        max-width:300px
+
+    @media only screen and (max-width: 400px)
+        max-width:260px
+    @media only screen and (max-width: 300px)
+        max-width:250px
+
   
   
 body .slick-prev, body .slick-next
@@ -86,6 +115,20 @@ body .slick-prev, body .slick-next
     background: dark !important
     z-index: 100
 
-.nabvar
-    z-index: 999
-    position: static
+// .nabvar
+//     z-index: 999
+//     position: static
+
+.nav-link
+    color: green
+        
+  
+.nav-item>a:hover
+    color: green
+        
+  
+        /*code to change background color*/
+.navbar>.active>a
+    background-color: #C0C0C0
+    color: green
+        

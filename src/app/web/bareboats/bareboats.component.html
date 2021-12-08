@@ -1,21 +1,24 @@
 
-
-
-
   <app-filter  [filterB] = "hideFilter" (closeFilter)="hideFilter = $event"  ></app-filter>
 
+
+
     <div class="row d-father">
-      <div class="p-0  f-advance" [hidden]="hideFilter" >
+      <div class="p-0 position-relative f-advance" [hidden]="hideFilter" >
         <app-filter-advance [filterB] = "hideFilter" (close)="hideFilter = $event"></app-filter-advance>
       </div>
-      <div  class="col boats">
+      <div  class="col position-relative boats">
         <app-boats ></app-boats>
+     
+          <div class="div more-yacht text-center mt-5 d-block p-2">
+            <h5 class="font-book mt-2 f-z23"> View more yachts <img src="./../../../assets/iconos/generales/Flecha.png"> </h5>
+            <p class="font-book f-z13">30 of 300</p> 
+          </div>
       </div>
+
+
     </div>
  
-
-        <app-books ></app-books>
-  
-        <app-plus ></app-plus>
-
-        <app-social ></app-social>
+    <!-- <app-books class="book"></app-books>  -->
+    <app-plus ></app-plus>
+    <app-social ></app-social>

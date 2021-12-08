@@ -20,18 +20,21 @@
     background-image: none
 
 .carousel-control-next-icon:after
-    content: '>'
-    font-weight: 700
-    font-size: 60px
+    font-family: 'FontAwesome'
+   
+    content: '\f054'
+    font-weight: 400
+    font-size: 50px
     color: $white-color
     @include mobile
         font-size: 40px
 
 
 .carousel-control-prev-icon:after
-    content: '<'
-    font-weight: 700
-    font-size: 60px
+    font-family: 'FontAwesome'
+    content: '\f053'
+    font-weight: 400
+    font-size: 50px
     color: $white-color
     @include mobile
         font-size: 40px
@@ -44,10 +47,9 @@
         bottom: 40px
 
 a.carousel-control-prev
-    left: calc( 100% - 200px  )!important
+    left: calc( 100% - 23%  )!important
     margin-left: 0
-    @include mobile
-        left: calc( 100% - 100px  )!important
+
 .details-card
     color: $secondary-color
 
@@ -64,9 +66,9 @@ a.carousel-control-prev
 
 .scuba img ,.diamont img ,.video img,.msg img
     max-height: 20px
-    margin-left: 9px
+    margin-left: 12px
     @include mobile
-        max-height: 18px
+        max-height: 19px
         margin-left: 5px
 
     @include desktopLarge
@@ -75,17 +77,44 @@ a.carousel-control-prev
 
 .share img , .favorite img ,.compare img
     max-height: 20px
-    margin-left: 9px
+    margin-left: 12px
     @include mobile
-        max-height: 18px
-        margin-left: 7px
+        max-height: 19px
+        margin-left: 9px
     @include desktopLarge
         max-height: 22px
         margin-left: 6px
 
 
 .star img
-    max-height: 19px
-    margin:4px
+    max-height: 15px
+    margin:2px
     @include mobile
        max-height: 18px
+
+
+.slick-slider
+    width: 88%
+    margin: auto
+
+    
+body .slick-prev, 
+body .slick-next
+    height: 45px
+    width: 40px
+
+.lines
+    border-bottom: 1px solid $secondary-color
+hr
+    height: 30px
+    width: 2px
+    background: $secondary-color
+    margin: 0px
+
+.btn
+    background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
+    border-radius: 0px
+
+.information
+    border-radius: 50%
+    border: 1px solid $dark-color

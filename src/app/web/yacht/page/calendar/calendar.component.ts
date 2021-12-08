@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import $ from '@;
 declare var $: any;
+
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
@@ -15,30 +16,34 @@ export class CalendarComponent implements OnInit {
   }
 
   onAfterInit(){
-    $('.center').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
+    $(".slider").slick({
+
+      // normal options...
+      infinite: false,
+    
+      // the magic
+      responsive: [{
+    
+          breakpoint: 1024,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 3,
+            infinite: true
           }
-        },
-        {
-          breakpoint: 480,
+    
+        }, {
+    
+          breakpoint: 600,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
+            slidesToShow: 2,
+            dots: true
           }
-        }
-      ]
+    
+        }, {
+    
+          breakpoint: 300,
+          settings: "unslick" // destroys slick
+    
+        }]
     });
 
   }

@@ -1,9 +1,9 @@
-<div class="container-fluid">
+
  
   
     <app-crew-profile></app-crew-profile>
     <!-- acordion options collapse -->
-    <section class="col-lg-12 ">
+    <section class="p-auto">
       <div class="accordion " id="accordionExample">
         <div class="card ">
           <div class="card-header " id="headingOne">
@@ -46,7 +46,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div id="collapseTwo" class="collapse show p-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="row">
               <div class="col-md-3">
                 <div class=" bb d-flex justify-content-between">
@@ -178,7 +178,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur accusamus perferendis ab cumque incidunt, vel tempora aspernatur, 
              amet velit ipsa ipsam ullam itaque commodi non impedit. Blanditiis iusto tempore distinctio?</p>
@@ -186,8 +186,10 @@
         </div>
       </div>
     </section>
-    <app-testimonial></app-testimonial>
-</div>
-
-
-
+    
+    <!-- carousel of boats cards -->
+    <app-carousel-boats></app-carousel-boats>
+    
+    
+    <!-- testimonial seccion  -->
+    <app-testimonial class="mt-5"></app-testimonial>

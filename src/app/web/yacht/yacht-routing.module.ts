@@ -5,6 +5,7 @@ import { CrewComponent } from './page/crew/crew.component';
 import { DetailsComponent } from './page/details/details.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { ReviewComponent } from './page/review/review.component';
+import { VideoComponent } from './page/video/video.component';
 import { YachtComponent } from './yacht.component';
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path:'menu',
         component: MenuComponent
+      },
+      {
+        path:'video',
+        component: VideoComponent
       },
       {
         path:'**',

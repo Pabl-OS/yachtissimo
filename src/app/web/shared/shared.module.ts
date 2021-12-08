@@ -7,8 +7,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { PlusComponent } from './plus/plus.component';
 import { SocialComponent } from './social/social.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { Injectable } from '@angular/core';
+import { BoatCardComponent } from './boat-card/boat-card.component';
 
-
+@Injectable({
+  providedIn: 'root',
+})
 
 
 @NgModule({
@@ -16,7 +20,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     HeaderComponent,
     PlusComponent,
-    SocialComponent
+    SocialComponent,
+    BoatCardComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +33,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   FooterComponent,
   HeaderComponent,
   PlusComponent,
-  SocialComponent
+  SocialComponent,
+  BoatCardComponent
   ]
 })
 export class SharedModule { }

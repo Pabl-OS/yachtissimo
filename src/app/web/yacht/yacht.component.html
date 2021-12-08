@@ -29,11 +29,12 @@
             </a>
           </li>
         <li class="nav-item">
-          <a class="nav-link f-z13 font-book" >VIDEOS </a>
+          <a class="nav-link f-z13 font-book" [routerLink]="['./video']" routerLinkActive="active">
+            VIDEOS 
+          </a>
         </li>
     </ul>
 </div>
 
-<div class="container-fluid">
+
     <router-outlet></router-outlet>
-</div>

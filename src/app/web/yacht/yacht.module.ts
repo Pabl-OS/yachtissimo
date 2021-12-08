@@ -13,6 +13,9 @@ import { ReviewComponent } from './page/review/review.component';
 import { VideoComponent } from './page/video/video.component';
 import { CrewProfileComponent } from './components/crew-profile/crew-profile.component';
 import { MenuComponent } from './page/menu/menu.component';
+import { HeaderComponent } from '../shared/header/header.component';
+import { SharedModule } from '../shared/shared.module';
+import { CarouselBoatsComponent } from './components/carousel-boats/carousel-boats.component';
 
 
 @NgModule({
@@ -26,12 +29,20 @@ import { MenuComponent } from './page/menu/menu.component';
     ReviewComponent,
     VideoComponent,
     CrewProfileComponent,
-    MenuComponent
+    MenuComponent,
+    CarouselBoatsComponent,
+
   ],
   imports: [
     CommonModule,
     YachtRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    SharedModule
+    
+    // SlickCarouselModule
+    
+
+    
   ]
 })
 export class YachtModule { }
