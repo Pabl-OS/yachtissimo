@@ -22,6 +22,10 @@
 
 
 
+
+
+
+
     
     "bl-lastest":"ÚLTIMOS ARTICULOS ",
     "bl-charter":"ASESORIAS",
@@ -41,6 +45,22 @@
 
     "go": "IR A RESERVAR",
 
+
+
+
+    "cy-about" : "SOBRE NOSOTROS",
+    "cy-contact": "CONTACTANOS",
+    "cy-faqs" : "FAQS",
+    "cy-how" : "COMO FUNCIONA",
+    "cy-our" : "NUESTRO SERVICIO",
+    "cy-reviews" : "REVIEWS",
+    
+    "cyr-partners" : "PATROCINADORES",
+    "cyr-member": "MEMBRESIAS Y CERTIFICACIONES",
+    "cyr-covid" : "COVID-19 CARTA INFORMATIVA",
+    "cyr-why" : "QUE ES YACHTISSIMO",
+    "cyr-privacy" : "POLITICA DE PRIVACIDAD",
+    "cyr-cookie" : "POLITICA DE COOKIES",
 
 
 

@@ -57,56 +57,67 @@
     </div>
     <div  [hidden]="!byDetails" >
       <div class="w-100 mt-5 section-content">
-        <label class="f-z8">SKIPPER/CREW</label>
+        <label class="f-z11 font-book">SKIPPER/CREW</label>
       </div>
       <div class="w-100 mt-5  section-content">
-        <label class="f-z8">BAHAMAS</label>
+        <label class="f-z11 font-book">BAHAMAS</label>
       </div>
-      <div class="w-100 mt-5  section-content">
-        <label class="f-z8">ALL TYPE</label>
-        <ul class="p-0">
-            <li>
-                <label class="pl-4 f-z8">All Yachts </label>
+      <div class="w-100 mt-3  section-content">
+        <button class="btn pl-1 btn-block  " type="button" 
+                data-toggle="collapse" data-target="#collapseFilterBoats" aria-expanded="false" aria-controls="collapseFilterBoats">
+          <span class="f-z11 font-book w-100" >
+            YACHT TYPE
+            <img src="./assets/iconos/generales/Flecha.png" class="float-right" alt="arrow" width="8px"> 
+          </span>    
+        </button>
+<!-- 
+        <label class="f-z11 w-100 font-book mb-4">YACHT TYPE   
+        <span class="float-right pr-2"> <img src="./assets/iconos/generales/Flecha.png" alt="arrow" width="8px"> </span></label> -->
+        <ul class="p-0 collapse show" id="collapseFilterBoats">
+            <li  class="d-flex justify-content-between">
+                <label class="pl-4 font-book f-z11">All Yachts </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li class="d-flex justify-content-between" >
-                <div>
-                  <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 34.png">Sailboat </label> 
+            <li>
+                <div class="d-flex justify-content-between">
+                  <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Sailboat.png">Sailboat </label> 
+                  <input type="checkbox" class="checkbox-round" />
                 </div>
-                <div>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                </div>
             </li>
-            <li >
-              
-                <div class="form-check d-flex justify-content-between">
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 40.png">Catamaran </label>
-                  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                </div>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Catamaran.png">Catamaran </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li>
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 38.png">Motorboat </label>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Motor boat.png">Motor Boat </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li>
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 41.png">Power Catamaran </label>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Power catamaran.png">Power Catamaran </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li>
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 47.png">Gulet </label>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Gulet.png">Gulet </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li>
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 47.png">Speed Boat </label>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Speed boat.png">Speed Boat </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
-            <li>
-                <label class="f-z8 font-medium"><img src="../../../../../assets/Filtros/Recurso 47.png">RIB </label>
+            <li class=" d-flex justify-content-between">
+                <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/RIB.png">RIB </label>
+                <input type="checkbox" class="checkbox-round" />
             </li>
         </ul>
+
       </div>
       <div class="row mt-4">
-        <div class="col-12 p-1">
+        <div class="col-12 p-1 pl-3 pr-3">
             <div class='date-picker' id='datetimepicker1'>
                 <input type='date' class="form-control"/>
             </div>
         </div>
-        <div class="col-12 p-1">
+        <div class="col-12 p-1 pl-3 pr-3">
           <div class='date-picker' id='datetimepicker1'>
             <input type='date' class="form-control"/>
           </div>
@@ -132,14 +143,14 @@
         </form>
 
       </div>
-      <div class="w-100 mt-5 f-z8  section-content">
-        <label>7 NIGHTS</label>
+      <div class="w-100 mt-2  section-content">
+        <label class="f-z11 font-book">7 NIGHTS</label>
       </div>
-      <div class="w-100 mt-5 f-z8  section-content">
-        <label>4 GUEST</label>
+      <div class="w-100 mt-2   section-content">
+        <label class="f-z11 font-book">4 GUEST</label>
       </div>  
-      <div class="w-100 mt-5 f-z8  section-content">
-        <label>6 CABINS</label>
+      <div class="w-100 mt-2 section-content">
+        <label class="f-z11 font-book">6 CABINS</label>
       </div>  
       <div class="w-100 mt-5 ">
         <label class="selected-text-color font-medium f-z8" >SPECIAL OFFERS!</label>
@@ -149,7 +160,7 @@
       </div>  
       <div class="w-100 mt-5 ">
        <div class="gradiant  d-flex justify-content-center" >
-            <label class="font-medium white-text-color   text-center mt-3 mb-3 f-z8"> 
+            <label class="font-medium dark-text-color   text-center mt-3 mb-3 f-z10"> 
               <span> <img width="30px" class="mr-2"  src="../../../../../assets/Header/Advanced filters.png"></span> 
               ADVANCE FILTERS 
             </label>
@@ -343,9 +354,3 @@
 
 </div>
 
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" id="gridCheck1">
-  <label class="form-check-label" for="gridCheck1">
-    Example checkbox
-  </label>
-</div>

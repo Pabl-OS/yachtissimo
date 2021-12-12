@@ -21,11 +21,12 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-</div>
+    </div>
     <div class="card-body p-2" [routerLink]="['/web/yacht']">
-        <h2 class="title-boat mb-0 text-book f-z23">ALIZE</h2>
+        <h2 class="title-boat mb-0 pl-1 font-book f-z23">ALIZE</h2>
         <div class="ml-0 mr-0 row border-bottom pb-1 border-secondary ">
-            <div class="col-md-5  col-6 p-1 ">
+            <!-- star and msg section -->
+            <div class="col-md-5  col-5 p-1 ">
                       <!-- star rating secction -->
                             <ul class="nav">
                                 <li class="nav-item  mb-1">
@@ -51,10 +52,8 @@
                             </ul> 
             </div>
             <!-- sharing boats sections -->
-
-            <div class="col-md-7 p-2 col-6">
-
-                        <ul class="nav float-right ">
+            <div class="col-md-7 p-1 col-7">
+                        <ul class="nav float-right pr-1">
                             <li class="nav-item mb-1 ">
                               <img class="favorite" src="././../../../../assets/iconos/catalogoyates/Buceo deshabilitado.png">
                             </li>
@@ -78,23 +77,35 @@
             </div>
         </div>
 
-        <div class="content-description pt-2">
-            <p class="description-boat font-book f-z10">
+        <div class="content-description  pt-2">
+            <p class="description-boat font-book pl-1 gray-text-color pr-1 f-z10">
                 GREECE | LAGOON 42 | 2020 | 10 GUEST | 5 CABINS | 3 GUEST
             </p>
-            <div class="column">
-                <div class=" col-8 p-0 col-md-6 col-xl-8 ">
-                    <div class="w-100 d-flex justify-content-between ">
-                        <span class="f-z9 font-medium"> Week From: <span class="f-z13">$2000</span> </span>
-                        <span><button class="btn more-info font-medium">i</button></span>
+            <div class="container-fluid">
+              <div class="row p-2">
+                  <div class=" col-8 p-0 col-md-6 col-xl-8 ">
+                      <div class="w-100 d-flex justify-content-between ">
+                          <span class="f-z9 font-medium"> Week From: <span class="f-z13 price">$2000</span> </span>
+                           <span class="text-center">
+                            <button class="btn more-info more-info-d font-medium">i</button>
+                            <span class="f-z13 price-low font-medium">$10,500</span>                        
+                          </span> 
+                      </div>
+                  </div>
+                  <div class=" col-8 p-0 col-md-6 col-xl-8">
+                      <div class="w-100 d-flex justify-content-between">
+                          <span class="f-z9 font-book gray-text-color">Plus Expences</span>
+                          <span class="text-center">
+                            <button class="btn more-info font-medium">i</button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="col-4 p-0 col-md-6 col-xl-4">
+                    <div class="float-right arrow pr-2">
+                      <img src="./../../../../assets/iconos/generales/Flecha.png" class="arrow" alt="arrow">
                     </div>
-                </div>
-                <div class=" col-8 p-0 col-md-6 col-xl-8">
-                    <div class="w-100 d-flex justify-content-between">
-                        <span class="f-z9 font-book">Plus Expences</span>
-                        <span><button class="btn more-info">i</button></span>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </div>
         </div>
     </div>

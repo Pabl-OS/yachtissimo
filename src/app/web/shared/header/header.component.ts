@@ -80,15 +80,22 @@ export class HeaderComponent implements OnInit,AfterViewInit {
   }
  
   ngAfterViewInit(){
-    $(document).ready(function() {
-      "use strict";
+
+
+    document.addEventListener("DOMContentLoaded", function(){
+      document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+        everydropdown.addEventListener('shown.bs.dropdown', function () {
+            var el_overlay = document.createElement('span');
+            el_overlay.className = 'screen-darken';
+            document.body.appendChild(el_overlay)
+        });
     
-      $('ul.navbar-nav > li').click(function(e:any) {
-        e.preventDefault();
-        $('ul.navbar-nav > li').removeClass('active');
-        $().addClass('active');
+        everydropdown.addEventListener('hide.bs.dropdown', function () {
+          document.body.removeChild(document.querySelector('.screen-darken')as any );
+        });
       });
-    });
+    
+    }); 
 
   }
  

@@ -43,7 +43,35 @@
     "bl-reviews":"INSIDER TIPS",
     "bl-events":"EVENTS",
 
+
+
+    "de-destination":"TOP DESTINATIONS",
+    "de-intineraries":"INTINERARIES ",
+    "de-charter":"CHARTER ADVICE",
+    "de-tips":"YACHT REVIEWS",
+    "de-reviews":"INSIDER TIPS",
+    "de-events":"EVENTS",
+
     "bl-go":"GO TO BLOG",
+
+
+
+
+    "cy-about" : "ABOUT US",
+    "cy-contact": "CONTACT US",
+    "cy-faqs" : "FAQS",
+    "cy-how" : "HOW IT WORKS",
+    "cy-our" : "OUR SERVICE",
+    "cy-reviews" : "REVIEWS",
+
+
+    "cyr-partners" : "PARTHERS",
+    "cyr-member": "MEMBERSHIPS AND CERTIFICATIONS",
+    "cyr-covid" : "COVID-19 CHARTER INFORMATION",
+    "cyr-why" : "WHY YACHTISSIMO",
+    "cyr-privacy" : " POLICY",
+    "cyr-cookie" : "COOKIE POLICY",
+
 
 
     "go": "GO TO BOOK",

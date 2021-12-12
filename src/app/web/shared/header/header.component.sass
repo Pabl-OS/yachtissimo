@@ -74,6 +74,24 @@ li
     border: none
     @include font-book
     
+.list-group li
+    &:last-child
+        color: $primary-color 
+    img
+        display: none
+    &:hover
+        @include font-medium
+        i
+            display: none
+        img
+            display: inline
+
+.dark-color
+    color: $dark-color!important
+
+        
+
+
 
 i
     color: $secondary-color
@@ -115,20 +133,6 @@ body .slick-prev, body .slick-next
     background: dark !important
     z-index: 100
 
-// .nabvar
-//     z-index: 999
-//     position: static
 
-.nav-link
-    color: green
-        
-  
-.nav-item>a:hover
-    color: green
-        
-  
-        /*code to change background color*/
-.navbar>.active>a
-    background-color: #C0C0C0
-    color: green
-        
+
+

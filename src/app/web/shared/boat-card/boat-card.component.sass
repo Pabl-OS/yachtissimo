@@ -9,6 +9,12 @@
         box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
         -webkit-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
         -moz-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)    
+        .more-info-d
+            display: none
+        .price-low ,.arrow
+            display: inline
+        .price
+            text-decoration: line-through        
 
 .carousel-caption
     left: 0px
@@ -62,27 +68,17 @@ a.carousel-control-prev
 
 
 .more-info
-    background-color: #000
+    border: 1px solid $dark-color
     border-radius: 50px
-    color: $white-color
-    font-size: 7pt
+    color: $dark-color
+    font-size: 8pt
     padding: 2px
-    height: 15px
-    width: 15px
+    height: 18px
+    width: 18px
 
-.scuba,.diamont,.video
-    max-height: 18px
-    margin-left: 5px
-    @include mobile
-        max-height: 15px
-        margin-left: 5px
-    @include desktopLarge
-        max-height: 22px
-        margin-left: 6px
-
-.share, .favorite,.compare
-    max-height: 18px
-    margin-left: 5px
+.scuba,.diamont,.video, .share, .favorite,.compare
+    max-height: 17px
+    margin-left: 4px
     @include mobile
         max-height: 15px
         margin-left: 5px
@@ -92,19 +88,25 @@ a.carousel-control-prev
 
 
 .star
-    width: 13px
-    height: 13px
+    max-height: 14px
     margin:1px
     @include mobile
-       max-height: 12px
+       max-height: 14px
     @include desktopLarge
-        max-height: 22px
+        max-height: 20px
         margin-left: 2px
 .msg
     margin-left: 2px
     max-height: 13px
     @include mobile
-       max-height: 12px
+       max-height: 14px
     @include desktopLarge
-        max-height: 22px
+        max-height: 17px
         margin-left: 2px
+
+.arrow
+    width: 12px
+    display: none
+.price-low
+    display: none
+        

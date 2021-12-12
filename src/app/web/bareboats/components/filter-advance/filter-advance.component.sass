@@ -38,8 +38,8 @@
 .date-picker input
     border: none
     border-radius: 0px!important
-    border-bottom: 1px solid $secondary-text-color!important
-    font-size: 8pt
+    border-bottom: 0.1rem solid $secondary-text-color!important
+    font-size: 11pt
     font-family: 'gothamrounded-book', sans-serif
 .section-content
     border-bottom: 1px solid $secondary-color
@@ -58,9 +58,9 @@
 ul li
     list-style: none
     label img
-        max-height: 18px
-        max-width: 18px
-        margin-right: 10px
+        max-height: 22px
+        max-width: 22px
+        margin-right: 8px
 
 .gradiant
     background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
@@ -95,3 +95,31 @@ radio:checked
     border-right:1px solid $secondary-color
     border-top:1px solid $secondary-color
     color: $primary-color
+
+
+.checkbox-round
+    width: 1.4em
+    height: 1.4em
+    background-color: white
+    border-radius: 50%
+    vertical-align: middle
+    border: 1px solid $dark-color
+    appearance: none
+    -webkit-appearance: none
+    outline: none
+    cursor: pointer
+
+
+.checkbox-round:checked
+    background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
+    border: 1px solid #b4837b 
+
+
+[data-toggle="collapse"].span img 
+    background-color: red
+
+
+[data-toggle="collapse"].collapsed 
+    background-color: blue
+
+
