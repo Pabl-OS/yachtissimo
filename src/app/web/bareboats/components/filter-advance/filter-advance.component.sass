@@ -1,5 +1,9 @@
 @import './../../../../../styles'
 
+.btn:focus
+    outline: none
+    box-shadow: none
+
 .btn-delete-filter
     border: 2px solid $secondary-color
     border-radius: 0px
@@ -34,15 +38,14 @@
     outline: none
     max-width: 300px!important
 
-
 .date-picker input
     border: none
     border-radius: 0px!important
     border-bottom: 0.1rem solid $secondary-text-color!important
     font-size: 11pt
     font-family: 'gothamrounded-book', sans-serif
+
 .section-content
-    border-bottom: 1px solid $secondary-color
     color: $dark-color
     font-family: 'gothamrounded-medium', sans-serif
     font-size: 8pt
@@ -62,6 +65,10 @@ ul li
         max-width: 22px
         margin-right: 8px
 
+hr
+    background: $secondary-color
+    margin: 2px
+
 .gradiant
     background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
 
@@ -74,28 +81,24 @@ ul li
     button
         border-radius: 0px
 
-
 .form-check-input
-  background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
-
-
-radio:checked
-  color: #fff
-  border-color: #b4837b
-  background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
+    background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
+    radio: checked
+    color: #fff
+    border-color: #b4837b
+    background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
 
 .nav-tabs .nav-link
-  color: $secondary-color
-  border-top-left-radius: 0rem
-  border-top-right-radius: 0rem
+    color: $secondary-color
+    border-top-left-radius: 0rem
+    border-top-right-radius: 0rem
 .nav-tabs
-  border-bottom: 1px solid $secondary-color
-  .nav-link.active
-    border-left:1px solid $secondary-color
-    border-right:1px solid $secondary-color
-    border-top:1px solid $secondary-color
+    border-bottom: 1px solid $secondary-color
+.nav-link.active
+    border-left: 1px solid $secondary-color
+    border-right: 1px solid $secondary-color
+    border-top: 1px solid $secondary-color
     color: $primary-color
-
 
 .checkbox-round
     width: 1.4em
@@ -109,17 +112,20 @@ radio:checked
     outline: none
     cursor: pointer
 
-
 .checkbox-round:checked
     background: linear-gradient(to left,#b4837b, #e2d3ce, #b4837b)
-    border: 1px solid #b4837b 
+    border: 1px solid #b4837b
 
+[data-toggle="collapse"].collapsed img
+    -webkit-transform: rotate(90deg)
+    -moz-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
+    transform: rotate(90deg)
+    transition-duration: 0.7s
 
-[data-toggle="collapse"].span img 
-    background-color: red
-
-
-[data-toggle="collapse"].collapsed 
-    background-color: blue
-
-
+[data-toggle="collapse"] img
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    transform: rotate(0deg)
+    transition-duration: 0.7s

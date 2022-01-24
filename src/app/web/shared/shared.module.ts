@@ -9,6 +9,8 @@ import { SocialComponent } from './social/social.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { Injectable } from '@angular/core';
 import { BoatCardComponent } from './boat-card/boat-card.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @Injectable({
   providedIn: 'root',
@@ -21,20 +23,22 @@ import { BoatCardComponent } from './boat-card/boat-card.component';
     HeaderComponent,
     PlusComponent,
     SocialComponent,
-    BoatCardComponent
+    BoatCardComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
     SlickCarouselModule,
     RouterModule,
-    TranslateModule
+    TranslateModule,
   ],
-  exports:[
-  FooterComponent,
-  HeaderComponent,
-  PlusComponent,
-  SocialComponent,
-  BoatCardComponent
+  exports: [
+    FooterComponent,
+    HeaderComponent,
+    PlusComponent,
+    SocialComponent,
+    BoatCardComponent,
+    NotFoundComponent
   ]
 })
 export class SharedModule { }

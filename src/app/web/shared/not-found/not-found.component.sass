@@ -1,46 +1,95 @@
-@import './../../../../styles.sass'
+@import './../../../../styles'
+.background
+    background-image: url('../../../../assets/404/Background.png')!important
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 100vh
+    background-attachment: fixed
+    // width: 100vh
+h2
+    font-size: 40pt
+    @include mobile
+        font-size: 25pt
 
-.form-company input,.form-company textarea
-    border-radius: 0px
-    border: 1px solid $dark-color
-.form-company button
-    border-radius: 0px
-    background-color: $dark-color
+footer
+    position: absolute
+    bottom: 0px
+    width: 100%
+.nav-footer
+
+    li
+        padding: 10px
+hr
+    height: 1px
+    background-color: $secondary-color
+    margin-left: 2%
+    margin-right: 2%
+
+.copy-yacht-text
+    color: $secondary-color
+    @include font-book
+    @include f-z19
+p
+    @include desktop
+        @include f-z20
+    @include mobile
+        @include f-z13
+.container-input
+    max-width: 600px
+    background-color: rgba(255,255 ,255 ,0.3 )
+    border: 1px solid $white-color
+    input
+        background-color: transparent
+        color: $white-color
+        outline: 0px !important
+        -webkit-appearance: none
+        box-shadow: none !important
+        border: none
+    .form-control:focus
+        border-color: #cccccc
+        -webkit-box-shadow: none
+        box-shadow: none
+
+.padre
+    display: table
+    height: calc( 100vh - 150px )
+
+.hijo
+    display: table-cell
+    vertical-align: middle
+
 img
     max-height: 250px
 .icon
     max-height: 18px
     color: $secondary-text-color
-    @include mobile
-        max-height: 16px
 
 .navbar-light .navbar-toggler
     border: none !important
 
 .menu
-    border-bottom: 2px solid $secondary-text-color
     width: 100%
+    @include mobile
+        background-color: rgba(255,255 ,255 ,0.9 )
+
 .menu li
     cursor: pointer
     margin-right: 35px
     margin-left: 35px
+
     a
-        color: $title-text-color
+        color: $white-color
         font-size: 10pt
         padding-top: 15px
         padding-bottom: 15px
+        @include mobile
+            color: $dark-color
         &:hover
             color: $primary-color
 
 // .selected
-//     background-color: $secondary-color
 
-// .phone-number span
-//     color: $secondary-text-color
-//     font-family: 'gothamrounded-book', sans-serif
-//     font-size: 10pt
-//     padding-right: 70px
-//     justify-content: start!important
 .title
     font-family: 'gothamrounded-book', sans-serif
 
@@ -48,16 +97,16 @@ img
     margin-right: 0px
 
 @media (max-width: 992px)
-    // .phone-number
-    //     justify-content: center
-    //     span
-    //         font-size: 8pt
-    //         padding-right: 30px
+    .phone-number
+        justify-content: center
+        span
+            font-size: 8pt
+            padding-right: 30px
     .menu li
-        margin-left: 4px
-        margin-right: 4px
+        margin-left: 5px
+        margin-right: 5px
     .hidden
-        display: none
+        visibility: hidden
         width: 0px
         height: 0px
 
@@ -65,7 +114,7 @@ img
     position: static
 
 .megamenu .dropdown-menu
-    background: none
+    background-color: #ffff
     border: none
     width: 100% !important
 li
@@ -131,3 +180,6 @@ body .slick-prev, body .slick-next
 
 .nav-link[aria-expanded="true"]
     background-color: $secondary-color
+
+.bg-white
+    background-color: rgba(255,255 ,255 ,0.8 )!important

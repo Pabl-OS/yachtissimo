@@ -1,9 +1,6 @@
 .selector-for-some-widget
   box-sizing: content-box
 
-
-
-
 // colors
 $primary-color: #bf7d71
 $secondary-color: #c5c3c1
@@ -15,8 +12,6 @@ $title-text-color: #000000
 $secondary-text-color: #a3a3a3
 $selected-text-color: #bf7d71
 
-
-
 // class for colors text
 .selected-text-color
   color: $selected-text-color
@@ -26,7 +21,6 @@ $selected-text-color: #bf7d71
 
 .gray-text-color
   color: $secondary-text-color
-
 
 @mixin mobile
   @media only screen and (max-width: 768px)
@@ -48,26 +42,21 @@ $selected-text-color: #bf7d71
     font-size: 7pt
 
 @mixin f-z9
- font-size: 9pt!important
+  font-size: 9pt!important
   @include desktop
     font-size: 9pt!important
   @include mobile
     font-size: 8pt
-  
 
 @mixin f-z10
   font-size: 10pt
   @include mobile
     font-size: 9pt
 
-
 @mixin f-z11
   font-size: 11pt!important
   @include mobile
     font-size: 10pt!important
-
-
-
 
 @mixin f-z13
   font-size: 13pt!important
@@ -97,7 +86,6 @@ $selected-text-color: #bf7d71
   @include mobile
     font-size: 19pt!important
 
-
 .f-z8
   font-size: 8pt
   @include mobile
@@ -109,8 +97,6 @@ $selected-text-color: #bf7d71
     font-size: 9pt!important
   @include mobile
     font-size: 8pt
-
-
 
 .f-z10
   font-size: 10pt
@@ -153,7 +139,7 @@ $selected-text-color: #bf7d71
   @include desktop
     font-size: 19pt!important
   @include mobile
-    font-size: 18pt!important    
+    font-size: 18pt!important
 
 .f-z25
   font-size: 25pt!important
@@ -164,7 +150,7 @@ $selected-text-color: #bf7d71
 
 @font-face
   font-family: gothamrounded-book
-  src: url('./assets/Typography/gothamrounded-book.otf') format('opentype')
+  src: url('./assets/Typography/GothamBook.ttf') format('opentype')
 
 @font-face
   font-family: gothamrounded-bookitalic
@@ -172,7 +158,7 @@ $selected-text-color: #bf7d71
 
 @font-face
   font-family: gothamrounded-medium
-  src: url('./assets/Typography/gothamrounded-medium.otf') format('opentype')
+  src: url('./assets/Typography/GothamMedium.ttf') format('opentype')
 
 .font-medium
   font-family: gothamrounded-medium,sans-serif
@@ -188,7 +174,7 @@ $selected-text-color: #bf7d71
 
 .btn-dark, .btn-light
   border-radius: 0px !important
-  background-color: $dark-color 
+  background-color: $dark-color
   span
     padding-left: 20px
     padding-right: 20px
@@ -200,13 +186,10 @@ $selected-text-color: #bf7d71
       li
         @include f-z20
         font-weight: 600
-  
-      
-    
+
 .btn-light
   background-color: $white-color
   border: 1px solid $dark-color
-
 
 .card
   border-radius: 0px
