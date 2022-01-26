@@ -1,0 +1,402 @@
+<div class="container-fluid pb-3 ">
+
+  <div class="d-flex justify-content-between pt-3 ">
+    <h6>{{'filter-advance-title' | translate}}</h6>
+    <button class="btn" (click)="closeFilter()">
+      <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="delete">
+    </button>
+  </div>
+  <div class="row pt-3">
+    <div class="col-6  ">
+      <div class="btn-group m-0" role="group" aria-label="money group">
+        <button type="button" (click)="typeMoney=true" [ngClass]="(typeMoney)?'btn-dark':'btn-white'"
+          class="btn f-z10 font-medium m-0 ">$</button>
+        <button type="button" (click)="typeMoney=false" [ngClass]="(!typeMoney)?'btn-dark':'btn-white'"
+          class="btn f-z10 font-medium m-0 ">€</button>
+      </div>
+    </div>
+    <div class="col-6 p-0">
+      <div class="btn-group m-0 " role="group" aria-label="size group">
+        <button type="button" class="btn f-z10 font-medium m-0 " (click)="typeSize=true"
+          [ngClass]="(!typeSize)?'btn-white':'btn-dark'">
+          M</button>
+        <button type="button" class="btn f-z10 font-medium m-0 " (click)="typeSize=false"
+          [ngClass]="(typeSize)?'btn-white':'btn-dark'">
+          FT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav for select type search or all filter -->
+  <ul class="nav nav-tabs mt-3">
+    <li class="nav-item">
+      <a class="nav-link f-z8 font-medium " (click)="byDetails = true" [ngClass]="(byDetails)?'active': '' ">BY
+        DETAILS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link f-z8 font-medium " (click)="byDetails = false" [ngClass]="(!byDetails)?'active': '' ">BY
+        NAME</a>
+    </li>
+  </ul>
+
+  <!-- input for search -->
+  <div [hidden]="byDetails" class="input-icon mt-5 mb-5">
+    <input class="search w-100 pt-2 " type="text" [placeholder]="'filter-advance-input' |translate" required>
+    <img src="./../../../../../assets/Header/Search.png" />
+  </div>
+  <div [hidden]="!byDetails">
+    <div class="w-100 mt-5 section-content">
+      <label class="f-z11 font-book">SKIPPER/CREW</label>
+    </div>
+    <div class="w-100 mt-3  section-content">
+      <button class="btn pl-1 d-flex justify-content-between btn-block collapsed" type="button" data-toggle="collapse"
+        data-target="#collapseFilterBahamas" aria-expanded="false" aria-controls="collapseFilterBahamas">
+        <span class="f-z11 font-book">
+          BAHAMAS
+        </span>
+        <img src="./assets/iconos/generales/Flecha.png" class="float-right mt-1 arrow" alt="arrow" width="10px">
+      </button>
+      <div class="collapse" id="collapseFilterBahamas">
+        <ul class="p-1 list-group">
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <div class="w-100 mt-3  section-content">
+      <button class="btn pl-1 d-flex justify-content-between btn-block " type="button" data-toggle="collapse"
+        data-target="#collapseFilterBoats" aria-expanded="true" aria-controls="collapseFilterBoats">
+        <span class="f-z11 font-book">
+          YACHT TYPE
+        </span>
+        <img src="./assets/iconos/generales/Flecha.png" class="float-right mt-1 arrow" alt="arrow" width="10px">
+      </button>
+      <div class="collapse show" id="collapseFilterBoats">
+        <ul class="p-1 list-group">
+          <li class="d-flex justify-content-between">
+            <label class="pl-4 font-book f-z11">All Yachts </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class="d-flex justify-content-between">
+            <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Sailboat.png">Sailboat
+            </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img
+                src="./assets/iconos/filtrosyates/Deshabilitados/Catamaran.png">Catamaran </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Motor boat.png">Motor
+              Boat </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img
+                src="./assets/iconos/filtrosyates/Deshabilitados/Power catamaran.png">Power Catamaran </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Gulet.png">Gulet
+            </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/Speed boat.png">Speed
+              Boat </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+          <li class=" d-flex justify-content-between">
+            <label class="f-z11 font-book"><img src="./assets/iconos/filtrosyates/Deshabilitados/RIB.png">RIB </label>
+            <input type="checkbox" class="checkbox-round" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+
+    <div class="w-100 mt-4">
+      <h5 class="f-z11 font-book">TRAVEL DATES</h5>
+
+      <div class="d-block p-1 pl-1 pr-1">
+        <div class='date-picker' id='datetimepicker1'>
+          <input type='date' class="form-control" />
+        </div>
+      </div>
+      <div class="d-block p-1 pl-1 pr-1">
+        <div class='date-picker' id='datetimepicker1'>
+          <input type='date' class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="w-100 mt-5 ">
+      <form>
+        <div class="form-group range-container mt-5">
+          <label for="formControlRange" class="f-z11 font-book range">PRICE</label>
+          <div class="d-flex justify-content-between">
+            <label>$8,000</label>
+            <label>$90,000</label>
+          </div>
+          <input type="range" class="w-100 price-range" id="formControlRange">
+
+          <label for="formControlRange" class="mt-4 f-z8">LEGHT</label>
+          <div class="d-flex justify-content-between">
+            <label>0</label>
+            <label>100</label>
+          </div>
+          <input type="range" class="w-100 price-range range" id="formControlRange">
+        </div>
+      </form>
+
+    </div>
+
+    <div class="w-100 mt-3  section-content">
+      <button class="btn pl-1 d-flex justify-content-between btn-block  collapsed" type="button" data-toggle="collapse"
+        data-target="#collapseFilterNights" aria-expanded="false" aria-controls="collapseFilterNights">
+        <span class="f-z11 font-book">
+          7 NIGHTS
+        </span>
+        <img src="./assets/iconos/generales/Flecha.png" class="float-right mt-1" alt="arrow" width="10px">
+      </button>
+      <div class="collapse" id="collapseFilterNights">
+        <ul class="p-1 list-group">
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+
+    <div class="w-100 mt-3  section-content">
+      <button class="btn pl-1 d-flex justify-content-between btn-block collapsed " type="button" data-toggle="collapse"
+        data-target="#collapseFilterGuest" aria-expanded="false" aria-controls="collapseFilterGuest">
+        <span class="f-z11 font-book">
+          4 GUEST
+        </span>
+        <img src="./assets/iconos/generales/Flecha.png" class="float-right mt-1" alt="arrow arrow" width="10px">
+      </button>
+      <div class="collapse" id="collapseFilterGuest">
+        <ul class="p-1 list-group">
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <div class="w-100 mt-3  section-content">
+      <button class="btn pl-1 d-flex justify-content-between btn-block collapsed" type="button" data-toggle="collapse"
+        data-target="#collapseFilterCabins" aria-expanded="false" aria-controls="collapseFilterCabins">
+        <span class="f-z11 font-book">
+          6 CABINS
+        </span>
+        <img src="./assets/iconos/generales/Flecha.png" class="float-right mt-1 arrow" alt="arrow" width="10px">
+      </button>
+      <div class="collapse" id="collapseFilterCabins">
+        <ul class="p-1 list-group">
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <div class="w-100 mt-5 ">
+      <label class="selected-text-color font-medium f-z8">SPECIAL OFFERS!</label>
+      <div class="w-100">
+        <img class="mt-3" src="../../../../../assets/Imagenes catálogo/Alice.png" width="100%" srcset="">
+      </div>
+    </div>
+    <div class="w-100 mt-5 ">
+      <div class="gradiant  d-flex justify-content-center">
+        <label class="font-medium dark-text-color   text-center mt-3 mb-3 f-z10">
+          <span> <img width="30px" class="mr-2" src="../../../../../assets/Header/Advanced filters.png"></span>
+          ADVANCE FILTERS
+        </label>
+      </div>
+
+      <div>
+        <ul class="list-group pl-4 mt-3">
+          <li>
+            <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium f-z8" for="defaultCheck1">
+              Yachts with video
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium f-z8" for="defaultCheck1">
+              Book 100% online
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium f-z8" for="defaultCheck1">
+              Scuba onboard
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium f-z8" for="defaultCheck1">
+              Builder
+            </label>
+          </li>
+        </ul>
+      </div>
+
+
+      <div>
+        <label class="f-z8 font-medium ml-4 mb-0 selected-text-color"> Equipment+</label>
+        <ul class="pl-4 mt-0 pt-0">
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Jacuzzi
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Kind-Size Beds A/C
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Jet sikes
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Heating
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Power
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Generator
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Solar Panels
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Water Maker
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Events & Meetings
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Sport Fising
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="brand">
+        <label class="f-z8 font-medium ml-2 mt-4 mb-0 selected-text-color"> BRANDS</label>
+        <ul class="pl-4 mt-0 pt-0">
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Albin
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Astondoa
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              Atlantinc Marine
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              BSC
+            </label>
+          </li>
+        </ul>
+
+        <button class="font-medium btn f-z8"> See all +32</button>
+
+
+      </div>
+
+
+      <div class="mt-5 mb-5 pb-5">
+        <label class="f-z8 font-medium ml-2 mt-4 mb-0 selected-text-color">EQUIPMENT</label>
+        <ul class="pl-4 mt-0 pt-0">
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              12v Socket
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              220v Socket
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  f-z8" for="defaultCheck1">
+              AIS
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Air Conditioner
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input  " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label font-medium  mt-0 f-z8" for="defaultCheck1">
+              Anchor
+            </label>
+          </li>
+        </ul>
+
+        <button class="font-medium btn f-z8"> See all +241</button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="row mb-5">
+      <div class="col-6 p-0  pl-1 pr-1">
+        <button class="btn  w-100 f-z8 font-medium btn-delete-filter">
+          {{'filter-advance-btn-delete' |translate}}
+        </button>
+      </div>
+
+      <div class="col-6 p-0 pr-1">
+        <button class="btn  w-100 f-z8  font-medium btn-filter">
+          {{'filter-advance-btn-view' |translate}}
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

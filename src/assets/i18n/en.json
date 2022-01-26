@@ -1,0 +1,140 @@
+{
+    "header-item1": "LUXURY YACHTS",
+    "header-item2": "BAREBOATS",
+    "header-item3": "DESTINATIONS",
+    "header-item4": "BLOG & EVENTS",
+    "header-item5": "COMPANY",
+    "header-item6": "ENQUIRE",
+
+
+
+
+    "filter-reset": "RESET ALL FILTERS",
+    "filter-order": "ORDER BY",
+    "fiter-btn-advance" :"FILTER ADVANCE",
+    "filter-input": "YACHT NAME OR KEYBOARD",
+
+    "filter-advance-title": "FILTERS",
+    "filter-advance-input": "Search by name",
+    "filter-advance-btn-view": "VIEW RESULTS",
+    "filter-advance-btn-delete": "DELETE FILTERS",
+
+    "ly-type":"YACHTS BY TYPE",
+    "ly-destination":"YACHT BY DESTINATION",
+    "ly-charter":"CHARTER TYPES",
+    "ly-offers":"YACHT OFFERS",
+    "ly-top":"TOP YACHTS",
+
+    "ly-search":"SEARCH ALL YACHTS",
+
+    "by-type":"BAREBOATS BY TYPE",
+    "by-destination":"BAREBOAT BY DESTINATION",
+    "by-charter":"CHARTER TYPES",
+    "by-offers":"BAREBOAT OFFERS",
+    "by-top":"TOP BAREBOATS",
+
+    "by-search":"SEARCH ALL BAREBOATS",
+    
+
+    "bl-lastest":"LATEST ARTICLES ",
+    "bl-charter":"CHARTER ADVICE",
+    "bl-destination":"YACHT DESTINATIONS",
+    "bl-tips":"YACHT REVIEWS",
+    "bl-reviews":"INSIDER TIPS",
+    "bl-events":"EVENTS",
+
+
+
+    "de-destination":"TOP DESTINATIONS",
+    "de-intineraries":"INTINERARIES ",
+    "de-charter":"CHARTER ADVICE",
+    "de-tips":"YACHT REVIEWS",
+    "de-reviews":"INSIDER TIPS",
+    "de-events":"EVENTS",
+
+    "bl-go":"GO TO BLOG",
+
+
+
+
+    "cy-about" : "ABOUT US",
+    "cy-contact": "CONTACT US",
+    "cy-faqs" : "FAQS",
+    "cy-how" : "HOW IT WORKS",
+    "cy-our" : "OUR SERVICE",
+    "cy-reviews" : "REVIEWS",
+
+
+    "cyr-partners" : "PARTHERS",
+    "cyr-member": "MEMBERSHIPS AND CERTIFICATIONS",
+    "cyr-covid" : "COVID-19 CHARTER INFORMATION",
+    "cyr-why" : "WHY YACHTISSIMO",
+    "cyr-privacy" : " POLICY",
+    "cyr-cookie" : "COOKIE POLICY",
+
+
+
+    "go": "GO TO BOOK",
+
+
+    "plus-title": "WHY CHARTER WITH US?",
+    "plus-cleft1": "Personalized solutions",
+    "plus-cleft2": "10+ years of experience in yacht charters",
+    "plus-cleft3": "Fast quotes and contract espertise",
+    "plus-cleft4": "CYBA certified yacht charter brokers",
+    "plus-cleft5": "The best possible value for money",
+
+    "plus-cright1": "Yacht inspection and crew interview",
+    "plus-cright2": "One-stop-shop booking assistance",
+    "plus-cright3": "Solid registered company",
+    "plus-cright4": "Professional unbiased advice",
+    "plus-cright5": "Access to every crewed yacht",
+
+    "plus-rmore": "READ MORE",
+    
+    "footer-about": "YACHTISSIMO Charter Vacations is an independent yacht charter broker agency with access to 100+ yachts worldwide. Contact us for extraordinary vacation experiences aboard Sailboats. Gulets, Catamarans and Motor yachts in the most spectacular destinations. Susbcribe to Yachtissimo newsletter for email updates and exclusive deals.",
+    "footer-abinput":"Your Email",
+
+
+    
+    "footer-ex-title": "EXPLORE DESTINATIONS",
+
+    "footer-ex-item1": "USVI & BVI´S",
+    "footer-ex-item2": "Bahamas",
+    "footer-ex-item3": "Crotia",
+    "footer-ex-item4": "Greece",
+    "footer-ex-item5": "Turkey",
+    "footer-ex-item6": "Caribbean Leewards",
+    "footer-ex-item7": "Caribbean Windwards",
+    "footer-ex-item8": "All destinations",
+    "footer-ex-item9": "FAQ",
+
+    "footer-sea-title": "SEARCH YACHTS",
+
+    "footer-sea-item1": "Catamarans ",
+    "footer-sea-item2": "Power Catamarans",
+    "footer-sea-item3": "Sailboats",
+    "footer-sea-item4": "Power yachts",
+    "footer-sea-item5": "Gulets",
+    "footer-sea-item6": "Special offers ",
+    "footer-sea-item7": "Scuba onboard ",
+    "footer-sea-item8": "Yoga & wellness ",
+    "footer-sea-item9": "All inclusive chartes",
+
+    "footer-social-title": "WE ARE JUST A CLICK AWAY!",
+
+
+
+
+    "footer-cyba": "Martha is member and certified broker of the  Charter Yacht Broker Association",
+
+    "compare-title": "Compare your  yatchs",
+
+    "compare-equipment": "exterior equipment",
+    "compare-confort": "Comfort",
+    "compare-services": "Services"
+
+
+
+    
+}

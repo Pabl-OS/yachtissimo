@@ -1,0 +1,112 @@
+@import './../../../../styles'
+
+.add-compare
+    border: 2px solid $primary-color
+
+.card
+    border-radius: 0px!important
+    &:hover
+        box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
+        -webkit-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
+        -moz-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)    
+        .more-info-d
+            display: none
+        .price-low ,.arrow
+            display: inline
+        .price
+            text-decoration: line-through        
+
+.carousel-caption
+    left: 0px
+    top: 0px
+    .c-banner
+        margin-left: 5px
+        max-width: 140px
+
+.container-top
+    border-bottom: 1px solid $secondary-color
+    padding-bottom: 10px
+
+.container-top .other-options
+    border-left: 1px solid $secondary-color
+.border-bottom
+    border-bottom: 1px solid $secondary-color !important
+.border-right
+    border-right: 1px solid $secondary-color !important
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+    height: 27px
+    width: 30px
+    outline: black
+    background-image: none
+
+
+.carousel-control-next-icon:after
+    font-family: 'FontAwesome'
+    content: '\f054'
+    font-weight: 300
+    font-size: 25px
+    color: $white-color
+
+
+.carousel-control-prev-icon:after
+    font-family: 'FontAwesome'
+    content: '\f053'
+    font-weight: 300
+    font-size: 25px
+    color: $white-color
+
+.carousel-control-prev,
+.carousel-control-next
+    align-items: flex-end
+    bottom: 15px
+a.carousel-control-prev
+    left: calc( 100% - 25%  )!important
+    margin-left: 0
+
+
+.more-info
+    border: 1px solid $dark-color
+    border-radius: 50px
+    color: $dark-color
+    font-size: 8pt
+    padding: 2px
+    height: 18px
+    width: 18px
+
+.scuba,.diamont,.video, .share, .favorite,.compare
+    max-height: 17px
+    margin-left: 4px
+    @include mobile
+        max-height: 15px
+        margin-left: 5px
+    @include desktopLarge
+        max-height: 22px
+        margin-left: 6px
+
+
+.star
+    max-height: 14px
+    margin:1px
+    @include mobile
+       max-height: 14px
+    @include desktopLarge
+        max-height: 20px
+        margin-left: 2px
+.msg
+    margin-left: 2px
+    max-height: 13px
+    @include mobile
+       max-height: 14px
+    @include desktopLarge
+        max-height: 17px
+        margin-left: 2px
+
+.arrow
+    width: 12px
+    display: none
+.price-low
+    display: none
+        

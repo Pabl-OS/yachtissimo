@@ -1,0 +1,185 @@
+@import './../../../../styles'
+.background
+    background-image: url('../../../../assets/404/Background.png')!important
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 100vh
+    background-attachment: fixed
+    // width: 100vh
+h2
+    font-size: 40pt
+    @include mobile
+        font-size: 25pt
+
+footer
+    position: absolute
+    bottom: 0px
+    width: 100%
+.nav-footer
+
+    li
+        padding: 10px
+hr
+    height: 1px
+    background-color: $secondary-color
+    margin-left: 2%
+    margin-right: 2%
+
+.copy-yacht-text
+    color: $secondary-color
+    @include font-book
+    @include f-z19
+p
+    @include desktop
+        @include f-z20
+    @include mobile
+        @include f-z13
+.container-input
+    max-width: 600px
+    background-color: rgba(255,255 ,255 ,0.3 )
+    border: 1px solid $white-color
+    input
+        background-color: transparent
+        color: $white-color
+        outline: 0px !important
+        -webkit-appearance: none
+        box-shadow: none !important
+        border: none
+    .form-control:focus
+        border-color: #cccccc
+        -webkit-box-shadow: none
+        box-shadow: none
+
+.padre
+    display: table
+    height: calc( 100vh - 150px )
+
+.hijo
+    display: table-cell
+    vertical-align: middle
+
+img
+    max-height: 250px
+.icon
+    max-height: 18px
+    color: $secondary-text-color
+
+.navbar-light .navbar-toggler
+    border: none !important
+
+.menu
+    width: 100%
+    @include mobile
+        background-color: rgba(255,255 ,255 ,0.9 )
+
+.menu li
+    cursor: pointer
+    margin-right: 35px
+    margin-left: 35px
+
+    a
+        color: $white-color
+        font-size: 10pt
+        padding-top: 15px
+        padding-bottom: 15px
+        @include mobile
+            color: $dark-color
+        &:hover
+            color: $primary-color
+
+// .selected
+
+.title
+    font-family: 'gothamrounded-book', sans-serif
+
+.navbar-brand
+    margin-right: 0px
+
+@media (max-width: 992px)
+    .phone-number
+        justify-content: center
+        span
+            font-size: 8pt
+            padding-right: 30px
+    .menu li
+        margin-left: 5px
+        margin-right: 5px
+    .hidden
+        visibility: hidden
+        width: 0px
+        height: 0px
+
+.megamenu
+    position: static
+
+.megamenu .dropdown-menu
+    background-color: #ffff
+    border: none
+    width: 100% !important
+li
+    margin: 0px
+    border: none
+    @include font-book
+
+.list-group li
+    &:last-child
+        color: $primary-color
+    img
+        display: none
+    &:hover
+        @include font-medium
+        i
+            display: none
+        img
+            display: inline
+
+.dark-color
+    color: $dark-color!important
+
+i
+    color: $secondary-color
+
+.arrow-icon
+    max-height: 18px
+
+body .slick-prev,
+body .slick-next
+    height: 45px
+    width: 40px
+
+.slick-slider
+    width: 93%
+    // max-width: 300px
+    margin: auto
+    @media only screen and (max-width: 960px)
+        max-width: 700px
+
+    @media only screen and (max-width: 700px)
+        max-width: 550px
+
+    @media only screen and (max-width: 600px)
+        max-width: 450px
+
+    @media only screen and (max-width: 500px)
+        max-width: 300px
+
+    @media only screen and (max-width: 400px)
+        max-width: 260px
+    @media only screen and (max-width: 300px)
+        max-width: 250px
+
+body .slick-prev, body .slick-next
+    height: 50px
+    width: 50px
+    background: dark !important
+    z-index: 100
+
+.nav-link[aria-expanded="true"]
+    background-color: $secondary-color
+
+.nav-link[aria-expanded="true"]
+    background-color: $secondary-color
+
+.bg-white
+    background-color: rgba(255,255 ,255 ,0.8 )!important

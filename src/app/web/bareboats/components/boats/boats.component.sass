@@ -1,0 +1,103 @@
+@import './../../../../../styles'
+
+.add-compare
+    border: 2px solid $primary-color
+
+
+
+.card
+    border-radius: 0px!important
+    &:hover
+        box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
+        -webkit-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)
+        -moz-box-shadow: 1px -2px 13px 4px rgba(207,207,207,1)    
+
+.card-contact
+    border: none 
+    background-color: #eeeeee
+    
+.carousel-caption
+    left: 0px
+    top: 0px
+    .c-banner
+        margin-left: 5px
+        max-width: 200px
+
+.container-top
+    border-bottom: 1px solid $secondary-color
+    padding-bottom: 10px
+
+.container-top .other-options
+    border-left: 1px solid $secondary-color
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+    height: 27px
+    width: 30px
+    outline: black
+    background-image: none
+
+
+.carousel-control-next-icon:after
+
+    content: '>'
+    font-weight: 500
+    font-size: 40px
+    color: $white-color
+
+
+.carousel-control-prev-icon:after
+    content: '<'
+    font-weight: 500
+    font-size: 40px
+    color: $white-color
+
+.carousel-control-prev,
+.carousel-control-next
+    align-items: flex-end
+    bottom: 30px
+a.carousel-control-prev
+    left: calc( 100% - 220px  )!important
+    margin-left: 0
+
+.msg
+    margin-left: 10px
+.more-info
+    background-color: $white-color
+    border-radius: 50px 
+    border: 1px solid $dark-color
+    color: $dark-color
+    font-size: 8pt
+    padding: 2px
+    height: 15px
+    width: 15px
+
+.scuba img ,.diamont img ,.video img,.msg img
+    max-height: 19px
+    margin-left: 5px
+    @include mobile
+        max-height: 16px
+        margin-left: 5px
+
+    @include desktopLarge
+        max-height: 19px
+        margin-left: 6px
+
+.share img , .favorite img ,.compare img
+    max-height: 19px
+    margin-left: 5px
+    @include mobile
+        max-height: 16px
+        margin-left: 5px
+    @include desktopLarge
+        max-height: 19px
+        margin-left: 6px
+
+
+.star img
+    width: 16px
+    height: 16px
+    margin:2px
+    @include mobile
+       max-height: 15px

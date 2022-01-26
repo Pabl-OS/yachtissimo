@@ -1,0 +1,584 @@
+<div class="background">
+    <div class="container-fluid justify-content-center  ">
+        
+      <nav class="navbar  navbar-expand-lg  navbar-dark fixed-top col-sm-offset-5 "
+          >
+        <h1 class="title navbar-toggler f-z20 p-3">YACHTISSIMO</h1>
+        <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="flex-column collapse navbar-collapse" id="navbarScroll">
+
+      
+      
+          <ul class="navbar-nav menu  navbar-nav-scroll justify-content-center text-center "  style="max-height: 100vh" >
+      
+            <!-- luxury yacht menu -->
+            <li class="nav-item dropdown megamenu selected">
+              <a id="megamneu" (click)="carousel.c1 = true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="nav-link">
+                {{ "header-item1" | translate }}</a>
+              <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                <div class="row bg-white pt-3 pb-2 rounded-0 m-0 shadow-lg" (click)="disableClick($event)">
+                  <div class="col-xl-1"></div>
+                  <div class="col-lg-4 col-xl-3 mt-4 mb-3">
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group p-2">
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-type" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-destination" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-charter" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-offers" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-top" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-4 m-0 d-flex justify-content-between align-items-center">
+                            {{ "ly-search" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xl-8">
+                    <div *ngIf="carousel.c1" class="mt-2 mb-3 d-block">
+                      <ngx-slick-carousel [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide p-1">
+                          <img src="{{ slide.img }}" alt="" width="100%" />
+                        </div>
+                      </ngx-slick-carousel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+      
+      
+            <li class="nav-item dropdown megamenu">
+              <a id="megamneu2" (click)="carousel.c2 = true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="nav-link">
+                {{ "header-item2" | translate }}
+              </a>
+      
+              <div aria-labelledby="megamneu2" class="dropdown-menu border-0 p-0 m-0">
+                <div class="row bg-white rounded-0 pt-3 pb-2 m-0 shadow-lg" (click)="disableClick($event)">
+                  <div class="col-xl-1"></div>
+                  <div class="col-lg-4 col-xl-3 mt-4 mb-3">
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group p-2">
+                          <li class="f-z13  mt-2 m-0  d-flex justify-content-between align-items-center ">
+                            {{ "by-type" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "by-destination" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "by-offers" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "by-top" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-4 m-0 d-flex justify-content-between align-items-center">
+                            {{ "by-search" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xl-8">
+                    <div class=" w-100 mt-2">
+                      <ngx-slick-carousel *ngIf="carousel.c2" [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide p-1">
+                          <img src="{{ slide.img }}" alt="" width="100%" />
+                          <p class="f-z12 text-center mt-3">
+                            CATAMARANS
+                          </p>
+                        </div>
+                      </ngx-slick-carousel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
+      
+            <li class="nav-item dropdown megamenu">
+              <a class="nav-link" id="megamneu3" (click)="carousel.c3 =true " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ "header-item3" | translate }}
+              </a>
+              <div aria-labelledby="megamneu3" class="dropdown-menu border-0 p-0 m-0">
+                <div class="row bg-white pt-3 pb-2 rounded-0 m-0 shadow-lg" (click)="disableClick($event)">
+                  <div class="col-xl-1"></div>
+                  <div class="col-lg-4 col-xl-3 mt-4 mb-3">
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group p-2">
+                          <li class="f-z13   mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-lastest" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-charter" | translate }}
+                             <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-destination" | translate }}
+                             <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center ">
+                            {{ "bl-reviews" | translate }}
+                             <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-events" | translate }}
+                             <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-4 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-go" | translate }}
+                             <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xl-8">
+                    <div class="mt-2 mb-3">
+                      <ngx-slick-carousel [config]="slideConfig" *ngIf="carousel.c3">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide p-1">
+                          <img src="{{ slide.img }}" alt="" width="100%" />
+                          <p class="f-z12  mt-2">
+                                YACHT CHARTER BROKE DO I NEED ONE?
+                          </p>
+                        </div>
+                      </ngx-slick-carousel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
+            <!-- blog and events menu -->
+            <li class="nav-item dropdown megamenu">
+              <a class="nav-link" id="megamneu4" (click)="carousel.c4 = true" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ "header-item4" | translate }}
+              </a>
+              <div aria-labelledby="megamneu4" class="dropdown-menu border-0 p-0 m-0">
+                <div class="row bg-white pt-3 rounded-0 m-0 shadow-lg" (click)="disableClick($event)">
+                  <div class="col-xl-1"></div>
+                  <div class="col-lg-4 col-xl-3 mt-4 mb-3">
+                    <div class="row ">
+                      <div class="col">
+                        <ul class="list-group p-2">
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-lastest" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-charter" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-tips" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-destination" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-reviews" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center
+                              ">
+                            {{ "bl-events" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                          <li class=" f-z13  mt-4 m-0 d-flex justify-content-between align-items-center">
+                            {{ "bl-go" | translate }}
+                            <span class="float-right">
+                              <i class="fa fa-angle-right fa-lg"></i>
+                              <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xl-8">
+                    <div class="mt-2 mb-3">
+                      <ngx-slick-carousel [config]="slideConfig" *ngIf="carousel.c4">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide p-2 pt-2">
+                          <img src="{{ slide.img }}"  width="100%" />
+                          <p class="f-z12  mt-3">
+                            YACHT CHARTHER BROKE DO I NEED ONE?
+                          </p>
+                        </div>
+                      </ngx-slick-carousel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
+            <!-- enquire menu -->
+            
+            <li class="nav-item dropdown megamenu">
+              <a class="nav-link" id="megamneu5" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">{{ "header-item5" | translate }}</a>
+      
+              <div aria-labelledby="megamneu5"  class="dropdown-menu border-0 p-0 m-0">
+                <div class="container-fluid ">
+                  <div class="row pt-3 w-100  rounded-0 m-0 shadow-lg" (click)="disableClick($event)">
+                    <div class="col-xl-1"></div>
+                    <div class="col-lg-6 col-xl-6 mt-4 mb-3">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <ul class="list-group p-2">
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cy-about" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                                
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cy-contact" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cy-faqs" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cy-how" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cy-our" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center
+                                          dark-color">
+                                {{ "cy-reviews" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <ul class="list-group p-2">
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cyr-partners" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                                <span class="f-z13  badge badge-primary badge-pill"></span>
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cyr-member" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cyr-covid" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class="f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cyr-why" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center">
+                                {{ "cyr-privacy" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                              <li class=" f-z13  mt-2 m-0 d-flex justify-content-between align-items-center
+                                          dark-color">
+                                {{ "cyr-cookie" | translate }}
+                                <span class="float-right">
+                                  <i class="fa fa-angle-right fa-lg"></i>
+                                  <img  class="arrow-icon"  src="./assets/iconos/generales/Flecha.png" alt="">
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 text-center col-xl-4">
+                      <img src="./../../../../assets/Imagenes catálogo/Mucho Gusto.png" width="100%"  alt="">          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
+      
+      
+            <!-- enquire menu -->
+            <li class="nav-item ">
+              <a class="nav-link active "  id="megamneu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ "header-item6" | translate }}</a>
+              <div aria-labelledby="megamneu6"  class="dropdown-menu w-100 border-0 p-0 m-0 overflow-auto">
+                <div class="row w-100 bg-white overflow-auto rounded-0 m-0 shadow-lg" (click)="disableClick($event)">
+                  <div class="container-fluid w-100">
+                    <form class="form-company w-100">
+                      <div class="container-fluid  w-100">
+                        <div class="row mt-4 mb-2 w-100">
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-7 mt-2 mb-2">
+                            <h4 class="f-z13 mb-4 font-medium">YOU DESERVE A VACATION! Please let us know how we can help you
+                            </h4>
+                            <div class="row w-100">
+                              <div class="col-md-4">
+                                <input class="form-control  f-z10 mt-3" type="text" placeholder="First name*"
+                                  aria-label=".form-control-lg example" />
+                                <input class="form-control  f-z10 mt-3" type="text" placeholder="Last Name"
+                                  aria-label="default input example" />
+                                <input class="form-control  f-z10 mt-3" type="text" placeholder="Email*"
+                                  aria-label=".form-control-sm example" />
+                                <input class="form-control  f-z10 mt-3" type="text" placeholder="Telephone*"
+                                  aria-label=".form-control-lg example" />
+                              </div>
+                              <div class="col-lg-8">
+        
+                                <textarea class="form-control mt-3  f-z10" id="exampleFormControlTextarea1" rows="3">
+                                      </textarea>
+        
+                                <div class="form-check  mt-2">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label f-z10 " for="defaultCheck1">
+                                    I have a read and agree to the privacy policy
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label f-z10 " for="defaultCheck1">
+                                    I would love to receive information from time to time about yacht details
+                                    and destinations.
+                                  </label>
+                                </div>
+        
+                                <div class="col-md-6 p-0 m-0 mt-3">
+                                  <button class="btn  f-z13 btn-dark btn-block">
+                                    Send
+                                  </button>
+        
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        
+                          
+                          <div class="col-md-3">
+                            <div class="p-3 text-center w-100">
+                              <img width="100%" src="https://i.pinimg.com/originals/21/e3/50/21e3503ea8f1016be1b0085805db05d2.jpg"
+                                  />
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+        </div>
+      </nav>
+
+
+
+        <div class="container-fluid font-book text-light w-100 h-100 ">
+
+                <div class="row align-items-center h-100">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6 ">
+                        <div class="padre">
+                            <div class="hijo">
+                                <h2 class="text-light ">404 PAGE NOT FOUND</h2>
+                                <h4 class=" f-z25">Gone sailing....</h4>
+                                <p class="mt-5 ">
+                                    Sorry! looks like the swell has come <br>
+                                    in and washed  away your page!
+                                </p>
+                                <p class="mt-4 ">
+                                   Please continue using the menus above <br>
+                                    or try searching for someting else:
+                                </p>
+                    
+                                <div class="container-input font-book f-z11  text-light">
+                                    <div class="form-group m-0 pl-2 pr-2">
+                                        <label for="inputSearch" class="m-0 p-0" >Where do you want to go?</label>
+                                        <input class="form-control m-0 p-0 " name="inputSearch" id="inputSearch" type="text">
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+         
+                
+            </div>
+           
+
+        </div>
+
+
+
+
+
+    </div>
+    <footer class=" mb-3">
+        <div class="container">
+            <ul class="nav nav-footer justify-content-around text-light font-book f-z15">
+                <li class="nav-item ">
+                    <a >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a >All yachts</a>
+                </li>
+                <li class="nav-item">
+                  <a>Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a >About</a>
+                </li>
+                <li class="nav-item">
+                  <a >Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a >Sitemap</a>
+                  </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="text-center mb-5">
+            <h4 class="copy-yacht-text">
+                copyright YACHTISSIMO 2018-2022
+            </h4>
+        </div>
+    </footer>
+</div>

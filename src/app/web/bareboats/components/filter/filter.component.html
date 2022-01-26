@@ -1,0 +1,70 @@
+
+    <div class=" filter-content mb-4 ">
+        <div class="row">
+            <div class=" col-lg-8 col-xl-10">
+                    <ul class="nabvar nav filters   d-flex 
+                               justify-content-sm-between
+                               justify-content-lg-start">
+                        <span class="search-r nav-link nav-item">8,0000 result found</span>
+                        <li class="nav-item ">  
+                          <a><span> <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="icon"></span> BAHAMAS </a>
+                        </li>
+                        <li class="nav-item">
+                          <a ><span> <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="icon"></span> WEST MEDITERRANEAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a ><span><img class="icon" src="./../../../../../assets/Header/Delete.png" alt="icon"></span>23-30 M</a>
+                        </li>
+                        <li class="nav-item">
+                            <a ><span> <img class="icon" src="./../../../../../assets/Header/Delete.png" alt="icon"></span>ALL YACHTS</a>
+                        </li>
+                        <button class="btn-reset"> 
+                            <span class="ml-2 mr-3">
+                                {{'filter-reset' | translate }}
+                            </span> 
+                        </button>
+                    </ul>
+            </div>
+            <div class="text-center 
+                            col-lg-3 col-xl-2 
+                            d-flex 
+                            justify-content-sm-start
+                            justify-content-lg-end
+                            ">
+                    <button class="btn-order-by f-z9 font-medium dropdown-toggle" 
+                        type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown "
+                        aria-haspopup="true" 
+                        aria-expanded="false"> {{'filter-order' | translate }} 
+                    </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" mt-2 mb-2"  [hidden]="!filterB">
+        <div class="pl-3 pr-3">
+            
+           
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-icon w-100">
+                    <input class="search  pt-2 " type="text" [placeholder]="'filter-input' | translate" required>
+                    <img  src="./../../../../../assets/Header/Search.png"/>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex  justify-content-lg-end   justify-content-sm-center ">
+                <button class="btn btn-filter-advance f-z9 font-medium " 
+                        type="button" (click)="closeFilterS()" >
+                    {{'fiter-btn-advance' | translate}}
+                </button>
+            </div>
+        </div>
+    </div>
+

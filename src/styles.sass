@@ -1,0 +1,203 @@
+.selector-for-some-widget
+  box-sizing: content-box
+
+// colors
+$primary-color: #bf7d71
+$secondary-color: #c5c3c1
+$dark-color: #000000
+$white-color: #ffffff
+
+// text colors
+$title-text-color: #000000
+$secondary-text-color: #a3a3a3
+$selected-text-color: #bf7d71
+
+// class for colors text
+.selected-text-color
+  color: $selected-text-color
+
+.white-text-color
+  color: $white-color
+
+.gray-text-color
+  color: $secondary-text-color
+
+@mixin mobile
+  @media only screen and (max-width: 768px)
+    @content
+@mixin desktop
+  @media only screen and (min-width: 1024px)
+    @content
+@mixin desktopLarge
+  @media only screen and (min-width: 1440px)
+    @content
+@mixin font-book
+  font-family: 'gothamrounded-book'
+@mixin font-medium
+  font-family: 'gothamrounded-medium'
+
+@mixin f-z8
+  font-size: 8pt
+  @include mobile
+    font-size: 7pt
+
+@mixin f-z9
+  font-size: 9pt!important
+  @include desktop
+    font-size: 9pt!important
+  @include mobile
+    font-size: 8pt
+
+@mixin f-z10
+  font-size: 10pt
+  @include mobile
+    font-size: 9pt
+
+@mixin f-z11
+  font-size: 11pt!important
+  @include mobile
+    font-size: 10pt!important
+
+@mixin f-z13
+  font-size: 13pt!important
+  @include desktop
+    font-size: 12pt!important
+  @include mobile
+    font-size: 12pt!important
+
+@mixin f-z19
+  @include desktop
+    font-size: 15pt!important
+  @include mobile
+    font-size: 13pt!important
+
+@mixin f-z20
+
+  font-size: 20pt!important
+  @include desktop
+    font-size: 18pt!important
+  @include mobile
+    font-size: 17pt!important
+
+@mixin f-z25
+  font-size: 25pt!important
+  @include desktop
+    font-size: 23pt!important
+  @include mobile
+    font-size: 19pt!important
+
+.f-z8
+  font-size: 8pt
+  @include mobile
+    font-size: 7pt
+
+.f-z9
+  font-size: 9pt!important
+  @include desktop
+    font-size: 9pt!important
+  @include mobile
+    font-size: 8pt
+
+.f-z10
+  font-size: 10pt
+  @include mobile
+    font-size: 9pt
+.f-z11
+  font-size: 11pt!important
+  @include mobile
+    font-size: 10pt!important
+
+.f-z12
+  font-size: 12pt!important
+  @include desktop
+    font-size: 12pt!important
+  @include mobile
+    font-size: 11pt!important
+.f-z13
+  font-size: 13pt!important
+  @include desktop
+    font-size: 12pt!important
+  @include mobile
+    font-size: 11pt!important
+
+.f-z19
+  @include desktop
+    font-size: 15pt!important
+  @include mobile
+    font-size: 13pt!important
+
+.f-z20
+
+  font-size: 20pt!important
+  @include desktop
+    font-size: 18pt!important
+  @include mobile
+    font-size: 17pt!important
+
+.f-z23
+  font-size: 23pt!important
+  @include desktop
+    font-size: 19pt!important
+  @include mobile
+    font-size: 18pt!important
+
+.f-z25
+  font-size: 25pt!important
+  @include desktop
+    font-size: 23pt!important
+  @include mobile
+    font-size: 19pt!important
+
+@font-face
+  font-family: gothamrounded-book
+  src: url('./assets/Typography/GothamBook.ttf') format('opentype')
+
+@font-face
+  font-family: gothamrounded-bookitalic
+  src: url('./assets/Typography/gothamrounded-bookitalic.otf') format('opentype')
+
+@font-face
+  font-family: gothamrounded-medium
+  src: url('./assets/Typography/GothamMedium.ttf') format('opentype')
+
+.font-medium
+  font-family: gothamrounded-medium,sans-serif
+
+.font-book
+  font-family: gothamrounded-book,sans-serif
+
+.font-italic
+  font-family: gothamrounded-bookitalic,sans-serif
+
+.cursor
+  cursor: pointer
+
+.btn-dark, .btn-light
+  border-radius: 0px !important
+  background-color: $dark-color
+  span
+    padding-left: 20px
+    padding-right: 20px
+    @include f-z13
+    @include font-book
+    @include mobile
+      padding-left: 10px
+      padding-right: 10px
+      li
+        @include f-z20
+        font-weight: 600
+
+.btn-light
+  background-color: $white-color
+  border: 1px solid $dark-color
+
+.card
+  border-radius: 0px
+  border: 1px solid $secondary-color
+.p-auto
+  @include mobile
+    padding: 5px
+  @include desktop
+    padding: 20px
+  @include desktopLarge
+    padding: 30px
